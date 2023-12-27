@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Header.css';
 import logo from '../../assets/logo.jpg'; // The path should be relative to the current file
 

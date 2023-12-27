@@ -24,7 +24,7 @@
     box-sizing: border-box;
   }
   .team-member img {
-    width: 20%; /* Explicit width */
+    width: 35%; /* Explicit width */
     max-width: 300px; /* Maximum size limit */
     height: auto;
     border-radius: 10px;
@@ -79,7 +79,7 @@
     }
   
     .team-member img {
-        width: 20%; /* Explicit width */
+        width: 25%; /* Explicit width */
     }
   
     .team-member h3,

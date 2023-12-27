@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './TeamMemberComponent.css';
 import teamMembers from './TeamMemberData'; // Adjust the path as needed
-import logo from '../../assets/jy.jpg';
 
 const TeamMemberComponent = ({ language }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
