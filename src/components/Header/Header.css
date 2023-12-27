@@ -1,0 +1,87 @@
+/* Header.css */
+
+.site-header {
+  background-color: #000; /* Dark background color */
+  color: #fff; /* White text color */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: start; /* Align items to the start of the container */
+  padding: 0 20px; /* Padding on both sides */
+  width: 100%; /* Full width */
+  position: fixed; /* Fixed position */
+  z-index: 1000;
+}
+
+
+
+.logo {
+  height: 50px; /* Adjust size as needed */
+  margin-right: 20px; /* Space between logo and nav items */
+}
+
+.site-header nav ul {
+  list-style: none; /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display nav items inline */
+}
+
+.site-header nav ul li {
+  margin: 0 10px; /* Space between nav items */
+}
+
+.site-header nav ul li a {
+  text-decoration: none; /* Remove link underlines */
+  color: #fff; /* White text color for links */
+  font-weight: bold; /* Make text bold */
+  font-size: 18px; /* Increase font size */
+  transition: color 0.3s; /* Smooth color transition for hover state */
+}
+
+.site-header nav ul li a:hover,
+.site-header nav ul li a:focus {
+  color: #4CAF50; /* Green color for link hover/focus state */
+}
+
+.language-switcher {
+  /* Styles for language switcher */
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 40px; 
+}
+
+.language-switcher button {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .site-header {
+    padding: 0 10px; /* Reduced padding */
+  }
+
+  .logo {
+    height: 40px; /* Reduced logo size */
+    margin-right: 10px; /* Reduced margin */
+  }
+
+  .site-header nav ul li {
+    margin: 0 5px; /* Reduced margin between nav items */
+  }
+
+  .site-header nav ul li a {
+    font-size: 16px; /* Slightly smaller font size */
+  }
+
+  .language-switcher {
+    margin-right: 10px; /* Reduced margin for language switcher */
+  }
+
+  .language-switcher button {
+    padding: 3px 6px; /* Smaller padding for the button */
+    font-size: 0.8rem; /* Smaller font size */
+  }
+}

@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from './components/Header/Header'; // Adjust the path as needed
+import MainHero from './components/MainHero/MainHero';
+import SecondPage from './components/SecondPage/SecondPage';
+import TeamMemberComponent from './components/TeamMember/TeamMemberComponent';
+import FooterComponent from './components/FooterComponent/FooterComponent';
+import React, { useState } from 'react';
 function App() {
+  const [language, setLanguage] = useState('EN'); // Start with 'EN' for English
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'EN' ? 'CN' : 'EN'); // Toggle between 'EN' and 'CN'
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header language={language} toggleLanguage={toggleLanguage} />
+      <MainHero language={language} />
+      <SecondPage language={language} />
+      <TeamMemberComponent language={language} />
+      <FooterComponent language={language} />
     </div>
   );
 }
