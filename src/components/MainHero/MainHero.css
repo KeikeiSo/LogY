@@ -99,5 +99,9 @@
       padding: 8px 16px; /* Smaller padding for the button */
       font-size: 1rem; /* Smaller font size for the button text */
     }
+    .main-hero .survey-button {
+      padding: 6px 10px; /* Smaller padding for the button */
+      font-size: 0.8rem; /* Smaller font size for the button text */
+    }
   }
   
