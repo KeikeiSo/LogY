@@ -49,7 +49,14 @@
     font-size: 2rem; /* Large font size for name */
   }
   
-  .team-member p {
+  .role-description {
+    font-weight: bold; /* Make the role description bold */
+    margin-bottom: 10px; /* Add some spacing between paragraphs */
+    margin-top: 10px;
+    font-size: 1.3rem; /* Readable font size */
+  }
+
+  .member-description  {
     margin-top: 10px;
     font-size: 1.2rem; /* Readable font size */
   }

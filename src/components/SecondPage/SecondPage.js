@@ -8,7 +8,7 @@ const SecondPage = ({ language }) => {
     <div className="second-page">
       <div className="text-container">
         <p>
-          {language === 'EN' ? 'Meet our diverse team of experts dedicated to empowering you through comprehensive knowledge of human biomechanics, personalized training, consulting services, and certified massage therapy.' : '欢迎了解我们的专业团队，专注于分享人体机能学、个性化训练、咨询服务以及认证按摩疗法。'}
+          {language === 'EN' ? 'Meet the minds behind KinesioLog[Y] – a dynamic trio of kinesiology enthusiasts from McGill University, Montreal, Canada.' : '遇见KinesioLog[Y]背后的智慧 - 来自加拿大蒙特利尔麦吉尔大学的三位运动生理学爱好者，他们充满活力和热情。'}
         </p>
       </div>
     </div>

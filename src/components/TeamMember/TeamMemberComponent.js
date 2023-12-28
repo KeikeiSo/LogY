@@ -8,7 +8,7 @@ const TeamMemberComponent = ({ language }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (true) {
+      if (!isHovered) {
         setCurrentIndex((currentIndex + 1) % teamMembers.length);
       }
     }, 4500);
@@ -29,8 +29,8 @@ const TeamMemberComponent = ({ language }) => {
       <div className="team-member">
         <img src={teamMembers[currentIndex].image} alt={teamMembers[currentIndex].name} />
         <h3>{teamMembers[currentIndex].name}</h3>
-        <p> {language === 'EN' ? teamMembers[currentIndex].role : teamMembers[currentIndex].roleCn}</p>
-        <p> {language === 'EN' ? teamMembers[currentIndex].description : teamMembers[currentIndex].descriptionCn}</p>
+        <p className="role-description">{language === 'EN' ? teamMembers[currentIndex].role : teamMembers[currentIndex].roleCn}</p>
+        <p className="member-description">{language === 'EN' ? teamMembers[currentIndex].description : teamMembers[currentIndex].descriptionCn}</p>
       </div>
       <div className="navigation-area left" onClick={goToPrevious}></div>
       <div className="navigation-area right" onClick={goToNext}></div>

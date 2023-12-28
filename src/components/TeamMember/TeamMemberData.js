@@ -3,27 +3,27 @@ import ry from '../../assets/ry.jpg';
 import e from '../../assets/e.jpg';
 const teamMembers = [
     {
-      name: "Jiayang",
-      role: "ANIE Personal Trainer",
+      name: "Jiayang Li",
+      role: "Personal Trainer (ANIE)",
       roleCn: "ANIE 健身训练师",
-      description: "A McGill University BSc Kinesiology student, graduating in winter, specializes in gym training for weight loss and muscle gain, running program design, Parkinson’s Disease rehabilitation, and has experience as a BOS Laboratory assistant.",
-      descriptionCn: "一位麦吉尔大学运动科学学士学位的学生，即将在冬季毕业。专攻健身训练，包括减肥和增肌，跑步计划设计，帕金森病康复，并且具有BOS实验室助理的经验。",
+      description: "Jiayang has a solid background in various sports, such as weightlifting, long-distance running, and basketball. His expertise lies in biomechanics research and crafting creative workout programs for individuals’ needs based on scientific principles of kinesiology, optimizing clients’ progression toward their fitness goals.",
+      descriptionCn: "Jiayang在多种运动方面有坚实的背景，比如举重、长跑和篮球。他擅长生物力学研究，并根据运动学科学原理，为个人量身定制创意健身计划，优化客户朝着健身目标的进展。",
       image: jy // image path
     },
     {
-      name: "Ruoyan",
-      role: "AMQ Certified Massage Therapist",
-      roleCn: "AMQ 认证按摩治疗师",
-      description: "A Conditioning Coach for Valencia Soccer Club Canada, Biomechanics Research Trainee at McGill University's BOS Laboratory, Can Fit Pro Personal Trainer, and a McGill BSc. Kinesiology student.",
-      descriptionCn: "作为瓦伦西亚足球俱乐部加拿大分部的调理教练，同时是麦吉尔大学BOS实验室的生物力学研究实习生，Can Fit Pro个人教练，也是麦吉尔大学运动科学学士学位的学生。",
+      name: "Ruoyan Liu",
+      role: "Certified Massage Therapist (AMQ)/Personal Trainer (CSEP),",
+      roleCn: "AMQ 认证按摩治疗师/CSEP个人训练师",
+      description: "Ruoyan brings a wealth of knowledge in musculoskeletal health. She can empower individuals toward higher performance levels with her expertise in Valencia Soccer Club, injury prevention, and rehabilitation.",
+      descriptionCn: "Ruoyan在肌肉骨骼健康方面拥有丰富的知识。她凭借对瓦伦西亚足球俱乐部、预防伤病和康复的专业知识，能够帮助个人实现更高水平的表现。",
       image: ry // image path
     },
     {
-      name: "Erin",
-      role: "Certified Massage Therapist",
-      roleCn: "认证按摩治疗师",
-      description: "A Boxing Instructor specializing in technique and weight loss, practitioner of Chinese traditional massage, and a McGill BSc Kinesiology student.",
-      descriptionCn: "一位专注于拳击技术和减重的拳击教练，精通中国传统按摩，并且是麦吉尔大学运动科学学士学位的学生。",
+      name: "Erin Ma",
+      role: "Certified Massage Therapist (AMQ)",
+      roleCn: "AMQ认证按摩治疗师",
+      description: "Erin merges her passion for therapeutic touch with a profound understanding of the human body anatomy. Her knowledge of boxing and Chinese traditional Bian stone therapy allows her to provide professional services to enhance one’s overall well-being and health.",
+      descriptionCn: "Erin将她对治疗性触摸的热情与对人体解剖学的深刻理解融合在一起。她对拳击和中国传统的砭石疗法的了解使她能够提供专业服务，以提升个人的整体健康",
       image: e // image path
     }
   ];

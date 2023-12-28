@@ -63,7 +63,26 @@
     background-color: white;
     color: black;
   }
+  .survey-button {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 8px 20px; /* Smaller padding than cta-button */
+    font-size: 1.2rem; /* Smaller font size than cta-button */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: block;
+    margin: 10px auto;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%); /* Angled corners */
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 1.5s;
+  }
   
+  .survey-button:hover {
+    background-color: white;
+    color: black;
+  }
   /* Fade in animation */
   @keyframes fadeIn {
     to {
