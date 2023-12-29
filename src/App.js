@@ -4,7 +4,9 @@ import MainHero from './components/MainHero/MainHero';
 import SecondPage from './components/SecondPage/SecondPage';
 import TeamMemberComponent from './components/TeamMember/TeamMemberComponent';
 import FooterComponent from './components/FooterComponent/FooterComponent';
+import ContactPage from './components/ContactPage/ContactPage';
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   const [language, setLanguage] = useState('EN'); // Start with 'EN' for English
 
@@ -13,11 +15,21 @@ function App() {
   };
   return (
     <div className="App">
-      <Header language={language} toggleLanguage={toggleLanguage} />
-      <MainHero language={language} />
-      <SecondPage language={language} />
-      <TeamMemberComponent language={language} />
-      <FooterComponent language={language} />
+      <Router basename="/Kinesiolog-Y-Startup-Website">
+        <Header language={language} toggleLanguage={toggleLanguage} />
+        <Routes>
+          <Route path="/" element={
+            <>
+            <MainHero language={language} />
+            <SecondPage language={language} />
+            <TeamMemberComponent language={language} />
+            <FooterComponent language={language} />
+            </>
+          } />
+          <Route path="/contact" element={<> <ContactPage /> <FooterComponent language={language} /></>} />
+          {/* Define other routes here */}
+        </Routes>
+      </Router>
     </div>
   );
 }
