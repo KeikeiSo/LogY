@@ -1,13 +1,14 @@
 /* AboutPage.css */
 
-/* General Styles */
 .about-page {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   color: #333;
   padding: 20px;
   max-width: 1000px;
-  margin: auto;
+  margin: 20px auto;
+  margin-top: 0%;
+  background: #fff;
 }
 .about-page h1:before {
   content: '';
@@ -16,125 +17,120 @@
   display: inline-block;
   background: rgb(255, 255, 255); /* Remove, just showing empty line */
 }
-.about-page h1, .about-page h2, .about-page h3 {
+.about-page h1 {
   text-align: center;
-  
+  color: #0077cc;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-/* Section Styling */
-section {
+.about-page h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-page section {
   margin-bottom: 30px;
   padding: 20px;
   border-radius: 8px;
+  background-color: #eef2f7;
 }
 
-/* Different Color Themes for Each Section */
-section:nth-child(1) {
+/* Mission Statement */
+.mission-statement {
   background-color: #f0e6f6;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-section:nth-child(2) {
+/* Our Services */
+.our-services {
   background-color: #e8f0f6;
+  border-top: 3px solid #bbb;
+  border-bottom: 3px solid #bbb;
 }
 
-section:nth-child(3) {
+.our-services ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.our-services li {
+  padding: 0.5em;
+  border-bottom: 1px solid #ddd;
+}
+
+.our-services li:last-child {
+  border-bottom: none;
+}
+
+/* Price List Section */
+.price-list-section {
   background-color: #f6f0e6;
 }
 
-/* Price List Section Specific Style */
-.price-list-section {
-  background-color: #e6f9f0;
+.price-list {
+  width: 100%;
+  margin: 0 auto;
 }
 
-/* Table Styling */
-table {
+.price-list h3 {
+  margin: 1em 0;
+  color: #0077cc;
+}
+
+.price-list table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 10px;
+  margin: 1em 0;
 }
 
-table, th, td {
+.price-list th,
+.price-list td {
+  padding: 0.5em;
   border: 1px solid #ddd;
-}
-
-td, th {
-  padding: 8px;
   text-align: left;
+  width: 60%;
 }
 
-th {
+.price-list th {
   background-color: #f2f2f2;
 }
 
-/* Animation Effects */
+/* Fade in animation */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 section {
   opacity: 0;
-  animation: fadeIn 2s ease forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-/* Hover Effects on Table Rows */
-tr:hover {
-  background-color: #f5f5f5;
+  animation: fadeIn 1s ease forwards;
 }
 
 /* Responsive Design */
-/* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .about-page {
     padding: 10px;
   }
 
-  table {
-    width: 100%;
-    border: 0;
+  .about-page h1 {
+    font-size: 2rem;
   }
 
-  thead {
-    display: none;
+  .about-page h2 {
+    font-size: 1.5rem;
   }
 
-  tbody, th, td, tr {
-    width: 100%;
-    display: block;
-    border: 0;
+  .our-services li,
+  .price-list th,
+  .price-list td {
+    padding: 0.5em;
   }
 
-  tr {
-    margin-bottom: 20px;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 10px;
-  }
-
-  td {
-    text-align: center; /* Center the text */
-    padding: 10px;
-    border-bottom: 0; /* Remove the table lines */
-    position: relative;
-    padding-left: 0; /* Remove left padding */
-    
-  }
-
-  td:before {
-    content: attr(data-label);
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #555;
-    display: none; /* Hide the label */
-  }
-
-  td:last-child {
-    border-bottom: 0;
+  .price-list-section,
+  .mission-statement {
+    padding: 15px;
   }
 }
-
