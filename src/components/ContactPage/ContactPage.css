@@ -11,6 +11,8 @@
     color: #333; /* Dark text for contrast */
     font-family: 'Arial', sans-serif; /* Modern, readable font */
     padding: 20px;
+    opacity: 0; /* Set initial opacity to 0 for fade-in effect */
+    animation: fadeIn 1.5s ease forwards; /* Apply fade-in animation */
   }
 
   
@@ -46,7 +48,11 @@
     height: auto;
     border-radius: 4px; /* Slightly rounded corners for the QR code image */
   }
-  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
   @media only screen and (max-width: 600px) {
     .contact-page h1 {
       font-size: 2rem;
