@@ -11,7 +11,7 @@ const TeamMemberComponent = ({ language }) => {
       if (!isHovered) {
         setCurrentIndex((currentIndex + 1) % teamMembers.length);
       }
-    }, 4500);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [currentIndex, isHovered]);
