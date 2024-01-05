@@ -22,7 +22,7 @@ const FooterComponent = ({ language }) => {
         </a>
       </div>
       <footer>
-        © 2023, KinesioLog[Y] Powered by Noshin & Kaifan
+        © 2024, KinesioLog[Y] Powered by Noshin & Kaifan
       </footer>
     </div>
   );
