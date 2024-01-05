@@ -29,7 +29,7 @@ function App() {
   };
   return (
     <div className="App">
-      <Router basename="/Kinesiolog-Y-Startup-Website">
+      <Router>
         <ScrollToTop />
         <Header language={language} toggleLanguage={toggleLanguage} />
         <Routes>
