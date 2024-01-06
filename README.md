@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# KinesioLog[Y]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the GitHub repository of KinesioLog[Y], a React-based website developed for McGill's student startup focused on wellness and personalized care.
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+At KinesioLog[Y], we aim to empower individuals towards optimal wellness through personalized care, education, and scientific evidence-based practices. This website serves as a digital platform to showcase our services and connect with our audience.
 
-### `npm start`
+### Services Offered
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Massage Therapy**: Personalized Swedish Massage sessions for tension relief and improved circulation.
+- **Personal Training**: Tailored fitness programs, suitable for beginners and experienced individuals.
+- **Boxing Training**: Combining cardio, strength, and skill development for a dynamic workout experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Website Components
 
-### `npm test`
+The website is built using React and consists of the following components:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `Header`: The top navigation bar of the website.
+- `AboutPage`: Information about KinesioLog[Y] and its mission.
+- `ContactPage`: A form and information for contacting us.
+- `JoinPage`: Details on how to join or get involved with KinesioLog[Y].
+- `MainHero`: The main showcase section of the website.
+- `SecondPage`: Additional information and services.
+- `TeamMember`: Introduction to our team members.
+- `FooterComponent`: Footer with essential links and information.
 
-### `npm run build`
+## Deployment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The website is live and can be accessed at [KinesioLog-Y.ca](https://www.kinesiolog-y.ca/).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Ongoing Features Implementation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Email subscription feature for updates and newsletters.
+- Enhanced team member introduction for a more personal touch.
+- French language package to cater to a wider audience.
 
-### `npm run eject`
+## Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+We welcome contributions to improve the KinesioLog[Y] website. This website is mainly developed and maintain by Noshin & Kaifan
+## Acknowledgments
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Thanks to McGill University and the student startup program for their support.
