@@ -37,7 +37,7 @@ The website is live and can be accessed at [KinesioLog-Y.ca](https://www.kinesio
 
 ## Contributing
 
-We welcome contributions to improve the KinesioLog[Y] website. This website is mainly developed and maintain by Noshin & Kaifan
+We welcome contributions to improve the KinesioLog[Y] website. This website is mainly developed and maintained by Noshin & Kaifan
 ## Acknowledgments
 
 - Thanks to McGill University and the student startup program for their support.
