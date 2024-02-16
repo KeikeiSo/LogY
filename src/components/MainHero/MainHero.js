@@ -10,7 +10,7 @@ const MainHero = ({ language }) => {
   };
   // Function to navigate to the About page
   const handleEarlyAccessClick = () => {
-    navigate('/about');
+    navigate('/services');
   };
 
   return (

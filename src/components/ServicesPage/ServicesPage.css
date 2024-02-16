@@ -38,7 +38,7 @@
     background: rgba(0, 0, 0, 0.7);
   }
   
-  .sectionA:hover {
+  .sectionA section :hover {
     transform: scale(1.03); /* Slightly reduced scale effect to accommodate margin */
     margin: 10px; /* Reduce margin on hover to allow for the scale effect without affecting layout */
   }
@@ -90,24 +90,34 @@
     background-color: white;
     color: black;
   }
-  
   @media (max-width: 768px) {
-    .section {
-      width: calc(100vw); /* Smaller margin for smaller screens */
-      height: calc(100vh); /* Adjust accordingly */
+    .sectionA { /* Ensure this targets the correct class if your sections use a class name with 'A' */
+      width: calc(100vw - 10px); /* Account for margin */
+      height: auto; /* Allows the section to expand based on content, ensuring text fits */
       margin: 5px;
+      padding: 20px; /* Adds padding to prevent text from touching the edges */
     }
   
-    h2 {
-      font-size: 2em;
+    .h2A, .pA { /* Use these class names if they're correct for your headings and paragraphs */
+      padding: 0 10px; /* Add horizontal padding */
     }
   
-    p {
-      font-size: 1.2em;
+    .h2A {
+      font-size: 4vw; /* Adjust font size based on viewport width, making it responsive */
+      max-font-size: 2em; /* Ensures font size does not become too large on slightly bigger screens */
     }
   
-    button {
-      padding: 10px 20px;
+    .pA {
+      font-size: 3.5vw; /* Similarly, adjust paragraph font size based on viewport width */
+      max-font-size: 1.2em; /* Prevents the font from being too large on bigger screens */
+      word-wrap: break-word; /* Ensures long words do not overflow */
+    }
+  
+    .read-button {
+      padding: 8px 16px; /* Adjust button padding */
+      font-size: 3vw; /* Make button text size responsive */
+      max-font-size: 1rem; /* Prevents the button font from being too large */
     }
   }
+
   
