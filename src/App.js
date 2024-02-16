@@ -9,6 +9,7 @@ import React, { useState ,useEffect} from 'react';
 import { BrowserRouter as Router, Route, Routes,useLocation } from 'react-router-dom';
 import AboutPage from './components/AboutPage/AboutPage';
 import JoinPage from './components/JoinPage/JoinPage';
+import ServicesPage from './components/ServicesPage/ServicesPage';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
           <Route path="/contact" element={<> <ContactPage language={language}/> <FooterComponent language={language} /></>} />
           <Route path="/about" element={<> <AboutPage language={language}/> <FooterComponent language={language} /></>} />
           <Route path="/join" element={<> <JoinPage language={language}/> <FooterComponent language={language} /></>} />
+          <Route path="/services" element={<> <ServicesPage language={language}/> <FooterComponent language={language} /></>} />
           {/* Define other routes here */}
         </Routes>
       </Router>

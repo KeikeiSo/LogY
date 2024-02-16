@@ -10,6 +10,7 @@ const Header = ({ language, toggleLanguage }) => {
         <nav>
           <ul>
             <li><Link to="/about">{language === 'EN' ? 'About' : '关于'}</Link></li>
+            <li><Link to="/services">{language === 'EN' ? 'Services' : '服务'}</Link></li>
             <li><Link to="/contact">{language === 'EN' ? 'Contact' : '联系'}</Link></li>
             <li><Link to="/join">{language === 'EN' ? 'Join' : '加入'}</Link></li>
           </ul>
