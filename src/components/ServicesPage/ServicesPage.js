@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import './ServicesPage.css'; // This imports the CSS file
 import massage from '../../assets/massage.jpg'; // The path should be relative to the current file
 import deeptissue from '../../assets/deeptissue.jpeg'; // The path should be relative to the current file
+import therapeutic from '../../assets/therapy.jpeg'; // The path should be relative to the current file
+import sports from '../../assets/sports.avif'; // The path should be relative to the current file
+import cupping from '../../assets/cupping.webp'; // The path should be relative to the current file
+import kinesiotherapy from '../../assets/kinesiotherapy.jpg'; // The path should be relative to the current file
 
 const Section = ({ title, description, buttonText, imageSrc, altText, price }) => {
     const [showPrice, setShowPrice] = useState(false); // State to control the visibility of the price
@@ -38,7 +42,7 @@ const ServicesPage = () => {
       />
       <Section
         title="Deep Tissue"
-        description="focuses on realigning deeper layers of muscles and connective tissue. It is particularly beneficial for chronic pain such as stiff neck and upper back, and sore shoulders by improving blood circulation"
+        description="Focuses on realigning deeper layers of muscles and connective tissue. It is particularly beneficial for chronic pain such as stiff neck and upper back, and sore shoulders by improving blood circulation"
         buttonText="Learn More"
         imageSrc={deeptissue}
         altText="Deep Tissue"
@@ -46,9 +50,9 @@ const ServicesPage = () => {
       />
       <Section
         title="Therapeutic"
-        description="involves manipulating the soft tissues of the body, to help alleviate pain, reduce muscle tension, improve circulation, enhance joint flexibility. It is beneficial for people with various conditions, such as chronic pain, sports injuries, oheadaches, muscle tension, or spasms. It is used to support rehabilitation after an injury"
+        description="Involves manipulating the soft tissues of the body, to help alleviate pain, reduce muscle tension, improve circulation, enhance joint flexibility. It is beneficial for people with various conditions, such as chronic pain, sports injuries, headaches, muscle tension, or spasms. It is used to support rehabilitation after an injury"
         buttonText="Learn More"
-        imageSrc={massage}
+        imageSrc={therapeutic}
         altText="Therapeutic"
         price="60$ / 30 minutes || 90$ / 60 minutes || 135$ / 90 minutes"
       />
@@ -56,15 +60,15 @@ const ServicesPage = () => {
         title="Sports"
         description="Sports massage is especially beneficial for athletes and people who engage in sports regularly. It is designed to help prevent injuries, enhance athletic performance, and aid in recovery from workouts or sports events by integrating massage and stretchings to improve muscle quality and joint range of motion"
         buttonText="Learn More"
-        imageSrc={deeptissue}
+        imageSrc={sports}
         altText="Sports"
         price="90$ / 60 minutes || 135$ / 90 minutes"
       />
       <Section
         title="Cupping"
-        description="can accelerate the healing process and has been used extensively for sore muscles.  It increases circulation, relieves muscle tension, and promotes cell repair"
+        description="Can accelerate the healing process and has been used extensively for sore muscles.  It increases circulation, relieves muscle tension, and promotes cell repair"
         buttonText="Learn More"
-        imageSrc={massage}
+        imageSrc={cupping}
         altText="Cupping"
         price="60$ / 30 minutes || 88$ / 60 minutes"
       />
@@ -72,7 +76,7 @@ const ServicesPage = () => {
         title="Kinesiotherapy"
         description="Log[Y] team offers a comprehensive evaluation and treatment plan  that skillfully integrates functional exercises and manual therapy, tailored to your specific conditions and sports needs. Utilizing the latest advancements from our biomechanics of occupation and sports lab, we are dedicated to accelerating your rehabilitation process. Our approach is designed to enhance your daily productivity and elevate your sports performance to a higher level. Experience personalized care that's focused on taking your health and athletic abilities to new heights with the Log[Y] team."
         buttonText="Learn More"
-        imageSrc={deeptissue}
+        imageSrc={kinesiotherapy}
         altText="Kinesiotherapy"
         price="90$ / 60 minutes || 135$ / 90 minutes"
       />
