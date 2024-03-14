@@ -41,4 +41,4 @@ The website is live and can be accessed at [KinesioLog-Y.ca](https://www.kinesio
 We welcome contributions to improve the KinesioLog[Y] website. This website is mainly developed and maintained by Noshin & Kaifan
 ## Acknowledgments
 
-- Thanks to KinesioLog[Y] and their cofunder for their support.
+- Thanks to KinesioLog[Y] and their cofunders for their support.
