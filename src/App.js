@@ -5,18 +5,21 @@ import SecondPage from './components/SecondPage/SecondPage';
 import TeamMemberComponent from './components/TeamMember/TeamMemberComponent';
 import FooterComponent from './components/FooterComponent/FooterComponent';
 import ContactPage from './components/ContactPage/ContactPage';
-import React, { useState ,useEffect} from 'react';
+import React, { useState, useEffect, createContext } from 'react';
+import enTranslations from './constants/en';
+import frTranslations from './constants/fr';
 import { BrowserRouter as Router, Route, Routes,useLocation } from 'react-router-dom';
-import AboutPage from './components/AboutPage/AboutPage';
+import HomePage from './components/HomePage/HomePage';
 import JoinPage from './components/JoinPage/JoinPage';
 import ServicesPage from './components/ServicesPage/ServicesPage';
 
 
 function App() {
-  const [language, setLanguage] = useState('EN'); // Start with 'EN' for English
+  const [language, setLanguage] = useState('en'); // Start with English
+  const translations = language === 'en' ? enTranslations : frTranslations;
 
   const toggleLanguage = () => {
-    setLanguage(language === 'EN' ? 'CN' : 'EN'); // Toggle between 'EN' and 'CN'
+    setLanguage(language === 'en' ? 'fr' : 'en'); // Toggle between English and French
   };
 
   const ScrollToTop = () => {
@@ -29,8 +32,9 @@ function App() {
     return null;
   };
   return (
-    <div className="App">
-      <Router>
+    <TranslationsContext.Provider value={{ translations, language }}>
+      <div className="App">
+        <Router>
         <ScrollToTop />
         <Header language={language} toggleLanguage={toggleLanguage} />
         <Routes>
@@ -43,14 +47,16 @@ function App() {
             </>
           } />
           <Route path="/contact" element={<> <ContactPage language={language}/> <FooterComponent language={language} /></>} />
-          <Route path="/about" element={<> <AboutPage language={language}/> <FooterComponent language={language} /></>} />
+          <Route path="/home" element={<> <HomePage language={language}/> <FooterComponent language={language} /></>} />
           <Route path="/join" element={<> <JoinPage language={language}/> <FooterComponent language={language} /></>} />
           <Route path="/services" element={<> <ServicesPage language={language}/> <FooterComponent language={language} /></>} />
           {/* Define other routes here */}
         </Routes>
-      </Router>
-    </div>
+        </Router>
+      </div>
+    </TranslationsContext.Provider>
   );
 }
 
 export default App;
+export const TranslationsContext = createContext();
