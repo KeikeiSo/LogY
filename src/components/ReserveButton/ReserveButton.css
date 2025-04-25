@@ -1,0 +1,23 @@
+@import '../../_variables.css';
+
+
+.reserve-button {
+    & button {
+        display: inline-flex;
+        padding: 10px 26px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        border: none;
+        background: var(--Orange-03, #F48101);
+        color: var(--btn-primary);
+        font-family: Avenir;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: -0.165px;
+    }
+}

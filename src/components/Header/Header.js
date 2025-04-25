@@ -1,25 +1,27 @@
 import React, { useContext } from 'react';
 import { TranslationsContext } from '../../App';
 import './Header.css';
-import logo from '../../assets/logo.jpg'; // The path should be relative to the current file
-import { Link } from 'react-router-dom';
+import logo from '../../assets/logo.png'; 
+import icon from '../../assets/language_switch_icon.svg'
 import ReserveButton from '../ReserveButton/ReserveButton';
+import { NavLink } from 'react-router-dom';
 const Header = ({ toggleLanguage }) => {
   const { translations, language } = useContext(TranslationsContext);
 
     return (
       <header className="site-header">
-        <Link to="/"><img src={logo} alt="KinesioLog[Y] Logo" className="logo" /></Link>
+        <NavLink to="/"><img src={logo} alt="KinesioLog[Y] Logo" className="logo" /></NavLink>
         <nav>
           <ul>
-            <li><Link to="/home">{translations.home}</Link></li>
-            <li><Link to="/about">{translations.about}</Link></li>
-            <li><Link to="/service">{translations.services}</Link></li>
-            <li><Link to="/contact">{translations.contact}</Link></li>
+            <li><NavLink to="/home">{translations.home}</NavLink></li>
+            <li><NavLink to="/about">{translations.about}</NavLink></li>
+            <li><NavLink to="/service">{translations.services}</NavLink></li>
+            <li><NavLink to="/contact">{translations.contact}</NavLink></li>
           </ul>
         </nav>
         <div className="language-switcher">
             <button onClick={toggleLanguage}>
+              <img src={icon} alt="Laguage switch icon" className='language-icon'/>
                 {language === 'en' ? 'Français' : 'English'}
             </button>
         </div>

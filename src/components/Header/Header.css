@@ -1,61 +1,65 @@
-/* Header.css */
+@import '../../_variables.css';
 
 .site-header {
-  background-color: #000; /* Dark background color */
-  color: #fff; /* White text color */
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Center items vertically */
-  justify-content: start; /* Align items to the start of the container */
-  padding: 0 20px; /* Padding on both sides */
-  width: 100%; /* Full width */
-  position: fixed; /* Fixed position */
+  background-color: var(--bg-light); 
+  color: var(--text-primary); 
+  display: flex; 
+  align-items: center; 
+  justify-content: start; 
+  padding-left: 120px;
+  width: 100%; 
+  height: 75px;
+  position: fixed; 
   z-index: 1000;
-}
 
-
-
-.logo {
-  height: 50px; /* Adjust size as needed */
-  margin-right: 20px; /* Space between logo and nav items */
-}
-
-.site-header nav ul {
-  list-style: none; /* Remove default list styling */
-  margin: 0;
-  padding: 0;
-  display: flex; /* Display nav items inline */
-}
-
-.site-header nav ul li {
-  margin: 0 10px; /* Space between nav items */
-}
-
-.site-header nav ul li a {
-  text-decoration: none; /* Remove link underlines */
-  color: #fff; /* White text color for links */
-  font-weight: bold; /* Make text bold */
-  font-size: 18px; /* Increase font size */
-  transition: color 0.3s; /* Smooth color transition for hover state */
-}
-
-.site-header nav ul li a:hover,
-.site-header nav ul li a:focus {
-  color: #4CAF50; /* Green color for link hover/focus state */
+  & nav {
+    & ul {
+      list-style: none;
+      display: flex;
+      padding-inline-start: 20px;
+      & li {
+        margin: 0px 16px;
+        width: 70px;
+        & a {
+          color: var(--text-primary);
+          text-decoration: none;
+          transition: color 0.3s;
+          font-size: 16px;
+          font-family: Avenir;
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .reserve-button {
+    position: fixed;
+    right: 150px;
+  }
 }
 
 .language-switcher {
-  /* Styles for language switcher */
   padding: 5px 10px;
   cursor: pointer;
-  margin-left: auto;
-  margin-right: 40px; 
+  position: static;
+  margin-left: 275px;
+  & button {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    text-decoration: underline;
+    padding: 5px 10px;
+    display: flex;
+    & .language-icon {
+      padding-right: 5px;
+    }
+  }
 }
 
-.language-switcher button {
-  background: none;
-  border: 1px solid white;
-  color: white;
-  padding: 5px 10px;
+.logo {
+  size: 40px;
 }
 
 @media only screen and (max-width: 600px) {
