@@ -11,7 +11,7 @@
         flex-shrink: 0;
         border-radius: 10px;
         border: none;
-        background: var(--Orange-03, #F48101);
+        background: var(--btn-bg);
         color: var(--btn-primary);
         font-family: Avenir;
         font-size: 18px;

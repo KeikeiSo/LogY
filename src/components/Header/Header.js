@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { TranslationsContext } from '../../App';
 import './Header.css';
-import logo from '../../assets/logo.png'; 
-import icon from '../../assets/language_switch_icon.svg'
+import logo from '../../assets/logos/logo.png'; 
+import icon from '../../assets/icons/language_switch_icon.svg'
 import ReserveButton from '../ReserveButton/ReserveButton';
 import { NavLink } from 'react-router-dom';
 const Header = ({ toggleLanguage }) => {

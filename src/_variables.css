@@ -10,18 +10,24 @@
   --accent: #ed8936;
 
   /* Text Colors */
-  --text-primary: #000;
+  --text-primary: #1C4F36;
+  --text-secondary: #415249;
   --text-focus: #173325;
+  --text-hashtag: #007D1F;
 
   /* Background Colors */
   --bg-light: #F5F3EF;
   --bg-dark: #1a202c;
-  --bg-white: #ffffff;
+  --bg-white: #F3F5F4;
   --bg-gray: #e2e8f0;
 
   /* Button Colors */
   --btn-primary: var(--primary-light);
+  --btn-bg: #F48101;
   --btn-primary-hover: var(--primary-light);
+
+  /* Border Colors */
+  --border:  #84998E;
 
   /* Alert Colors */
   --success: #48bb78;

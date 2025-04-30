@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './ServicesPage.css'; // This imports the CSS file
-import massage from '../../assets/massage.jpg'; // The path should be relative to the current file
 import deeptissue from '../../assets/deeptissue.jpeg'; // The path should be relative to the current file
 import therapeutic from '../../assets/therapy.jpeg'; // The path should be relative to the current file
 import sports from '../../assets/sports.avif'; // The path should be relative to the current file
@@ -36,7 +35,6 @@ const ServicesPage = ({ language }) => {
         title={language === 'EN' ? 'Massage Therapy' : '按摩疗法'}
         description={language === 'EN' ? '"Relax & Revitalize: Swedish massage induces deep relaxation, helping to reduce stress and anxiety. The soothing strokes and movements help calm the nervous system and improve muscle stiffness"' : '瑞典式按摩能够让人深度放松，有助于减轻压力和焦虑。舒缓的手法和动作有助于镇静神经系统，改善肌肉僵硬。'}
         buttonText={language === 'EN' ? 'Learn More' : '了解更多'}
-        imageSrc={massage}
         altText="Massage Therapy"
         price="80$ / 60 minutes || 118$ / 90 minutes"
       />
