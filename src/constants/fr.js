@@ -55,7 +55,18 @@ export default {
   openHour: "Du lundi au vendredi, de 8h à 20h",
   phoneNumber: "(514) 430-6518",
 
-  join: "Rejoignez notre équipe",
+  // footer
+  receptionEmail: "logy.reception@gmail.com",
+
+  career: "Carrières",
+  wantToJoin: "Vous souhaitez rejoindre LogY ? Envoyez votre CV à :",
+  infoEmail: "info@logykinesiologie.ca",
+
+  stayConnect: "Restez Connecté·e",
+  stayUpdated: "Restez informé·e de nos dernières promotions, événements et actualités.",
+  emailPlaceholder: "Saisissez votre courriel",
+  subscribe: "S’abonner",
+  subscribeSuccess: "Merci pour votre abonnement !",
   
   homeDescription: "Notre équipe d'experts vous aide à mieux bouger, à vous sentir plus fort et à vivre sans douleur. Que vous vous remettiez d'une blessure ou que vous gériez une douleur chronique, nous vous guiderons à chaque étape dans un espace accueillant et favorable.",
   servicesList: "Kinésiologie • Massage • Réadaptation • Fitness",

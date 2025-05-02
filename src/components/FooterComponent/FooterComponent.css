@@ -1,84 +1,263 @@
 /* FooterComponent.css */
 
 .footer-container {
+  display: flex;
+  background-color: var(--bg-dark);
+  gap: 140px;
+  padding: 36px 120px;
+
+  & h3 {
     text-align: center;
-    color: #000; /* Black font color */
-    background-color: #fff; /* White background */
-    padding: 50px 20px;
-    font-family: Arial, sans-serif; /* or your preferred font */
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.165px;
+    color: var(--primary-light);
   }
-  
-  .footer-container h2 {
-    margin-bottom: 20px;
-    font-size: 2.5rem;
+
+  & img {
+    width: 24px;
+    height: 24px;
   }
-  
-  .footer-container p {
-    margin-bottom: 30px;
-    line-height: 1.6;
+
+  & p {
+    margin: 0;
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.165px;
+    color: var(--primary-light);
   }
-  
-  .email-signup {
-    margin-bottom: 30px;
+
+  & .footer-contact {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & h3 {
+      text-align: left;
+      margin: 0 5px;
+    }
+
+    & > div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      & > p {
+        text-align: left;
+      }
+    }
   }
-  
-  .email-signup input {
+
+  & .footer-career {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & h3 {
+      text-align: left;
+      margin: 0;
+    }
+
+    & > p {
+      text-align: left;
+    }
+
+    & > div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  & .footer-connect {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    & > p {
+      text-align: left;
+    }
+
+    & h3 {
+      text-align: left;
+      margin: 0;
+    }
+
+    & > div {
+      display: flex;
+
+    }
+  }
+
+
+}
+
+  /* Subscribe section styles */
+  .footer-subscribe {
+    display: flex;
+    margin-top: 10px;
+    width: 215px;
+    align-items: center;
+    border: 1px solid var(--btn-border);
+    border-radius: 14px;
+    padding: 5px;
+  }
+
+  .footer-subscribe.error {
+    border: 2px solid red;
+  }
+
+  .subscribe-input {
+    flex: 1;
     padding: 10px;
-    margin-right: -4px; /* to counteract default spacing */
-    border: 1px solid #ccc;
-    border-right: none;
-    color: #000; /* Black font color for input */
-  }
-  
-  .email-signup button {
-    padding: 11.2px 20px;
-    background-color: #333; /* Darker background for button */
-    color: white; /* White text for button */
+    background: transparent;
+    color: var(--text-input);
+    font-family: Avenir;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.165px;
     border: none;
+    padding-right: 0;
+    max-width: 150px;
+    width: 100%;
+  }
+
+  input.subscribe-input:focus {
+    outline-width: 0;
+  }
+
+  .subscribe-button {
+    background-color: var(--btn-subscribe);
+    color: var(--text-focus);
+    border: none;
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.165px;
     cursor: pointer;
+    border-radius: 10px;
+    transition: opacity 0.2s;
+    display: flex;
+    width: 96px;
+    height: 36px;
+    padding: 7px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    margin-left: -40px;
   }
-  
-  .social-media a {
-    margin: 0 30px;
-    color: #000; /* Black font color for icons */
-    font-size: 4rem; /* Adjust size as needed */
-    text-decoration: none;
+
+  .subscribe-button:hover {
+    opacity: 0.9;
   }
-  
-  footer {
-    margin-top: 60px;
-    font-size: 0.5rem;
+
+  .subscribe-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-light);
+    color: var(--bg-dark);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: 350px;
+    max-width: 90%;
+    animation: fadeIn 0.3s ease-out;
+
+    & .popup-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 5px;
+
+      & img {
+        width: 24px;
+        height: 24px;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+      }
+    }
+
+    & .popup-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      text-align: center;
+
+      & .popup-icon {
+        width: 180px;
+        height: 180px;
+        padding-right: 30px;
+      }
+    
+      & .popup-check {
+        width: 24px;
+        height: 24px;
+        margin-top: -45px;
+        margin-bottom: 20px;
+      }
+
+      & p {
+        color: var(--text-focus);
+        font-family: Avenir;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: -0.165px;
+      }
+    }
   }
-  
-  /* Ensure the FontAwesome icons (if used) are also styled to match the black font color */
-  .social-media i {
-    color: #000; /* Black color for font icons */
-  }
-  
-  /* Additional hover effect for social media icons for user feedback */
-  .social-media a:hover {
-    color: #555; /* Dark grey for hover state */
-  }
-  .social-media :hover{
-    transform: scale(1.1);
-  }
-  .social-media img {
-    width: 50px; /* Or any size you prefer */
-    height: auto; /* This will maintain the aspect ratio */
+
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -45%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
   }
 
   /* Responsiveness: Adjust the input and button size on smaller screens */
+  .footer-social-media {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
   @media only screen and (max-width: 600px) {
+    .footer-subscribe {
+      flex-direction: column;
+    }
+
     .email-signup input,
     .email-signup button {
       width: 90%;
-      margin: 10px 0; /* Stack the elements with some spacing */
+      margin: 10px 0;
       border-right: 1px solid #ccc;
     }
     
     .social-media a {
-      margin: 5px; /* Reduced margin for smaller screens */
-      font-size: 3rem; /* Slightly smaller icons for smaller screens */
+      margin: 5px;
+      font-size: 3rem;
     }
   }
-  

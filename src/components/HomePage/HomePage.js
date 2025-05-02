@@ -13,7 +13,7 @@ import pnLogo from '../../assets/logos/pn.png';
 import starIcon from '../../assets/icons/star.svg';
 import leftArrow from '../../assets/icons/leftArrow.svg';
 import rightArrow from '../../assets/icons/rightArrow.svg';
-import addressIcon from '../../assets/icons/addressIcon.svg';
+import addressIcon from '../../assets/icons/address.svg';
 import metroIcon from '../../assets/icons/metro.svg';
 import hourIcon from '../../assets/icons/hour.svg';
 import phoneIcon from '../../assets/icons/phone.svg';
@@ -176,7 +176,7 @@ const HomePage = () => {
         <h2>{translations.findUsHere}</h2>
         <div className='home-page-find-us-container'>
           <div className='home-page--map'>
-            <iframe width="100%" height="300" load="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:EjYxNDcwIFJ1ZSBQZWVsIHN1aXRlIDgyMCwgTW9udHLDqWFsLCBRQyBIM0EgMVQxLCBDYW5hZGEiJRojChYKFAoSCXsv2WVBGslMEQmbsvcuow3XEglzdWl0ZSA4MjA&key=AIzaSyAx4r2NNwSaHb51Yf24lb0lrfA1xJ330Vk"></iframe>
+            <iframe title="google map embed" width="100%" height="300" load="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:EjYxNDcwIFJ1ZSBQZWVsIHN1aXRlIDgyMCwgTW9udHLDqWFsLCBRQyBIM0EgMVQxLCBDYW5hZGEiJRojChYKFAoSCXsv2WVBGslMEQmbsvcuow3XEglzdWl0ZSA4MjA&key=AIzaSyAx4r2NNwSaHb51Yf24lb0lrfA1xJ330Vk"></iframe>
           </div>
           <div className='home-page--address'>
             <h3>{translations.addressTitle}</h3>
