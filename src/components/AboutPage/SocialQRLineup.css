@@ -1,0 +1,45 @@
+.social-qr-lineup {
+  display: flex;
+  gap: 90px;
+  margin-top: 2rem;
+}
+
+.social-qr-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  padding: 16px;
+  width: 150px;
+}
+
+.qr-code {
+  width: 102px;
+  height: 102px;
+  object-fit: contain;
+}
+
+.social-qr-item h3 {
+    margin: 0;
+    font-family: Helvetica;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.165px;
+    color: var(--text-focus);
+}
+
+.social-qr-item p {
+    margin: 0;
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.165px;
+    color: var(--text-focus);
+    text-decoration: underline;
+}

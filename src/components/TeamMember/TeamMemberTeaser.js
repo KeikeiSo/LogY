@@ -1,0 +1,29 @@
+import React, {useContext} from 'react';
+import './TeamMemberTeaser.css';
+import { Link } from 'react-router-dom';
+import { TranslationsContext } from '../../App';
+import arrow from '../../assets/icons/acline_arrow.svg';
+import BookHerButton from '../BookHerButton/BookHerButton';
+
+const TeamMemberTeaser = ({ member}) => {
+  const { translations } = useContext(TranslationsContext);
+  const teamPagePath = `/team/${member.name.toLowerCase().replace(/\s+/g, '-')}`
+  return (
+    <div className="team-member-teaser">
+      <img src={member.imagePath} alt={member.name} className="teaser-image" />
+      <Link to={teamPagePath} className="teaser-name">
+        {member.name}
+        <img src={arrow} alt='link arrow'></img>
+      </Link>
+      <p className="teaser-education">{member.education}</p>
+      <BookHerButton 
+        reserveUrl={member.reserveUrl}
+        colorOption='green'
+      >
+        {translations.bookHer}
+      </BookHerButton>
+    </div>
+  );
+};
+
+export default TeamMemberTeaser;

@@ -11,6 +11,23 @@
   height: 75px;
   position: fixed; 
   z-index: 1000;
+  transition: background-color 0.3s ease;
+
+  &.scrolled {
+    background-color: var(--bg-dark);
+    color: var(--bg-white);
+    
+    & nav ul li a {
+      color: var(--bg-white);
+    }
+    
+    .language-switcher button {
+      color: var(--bg-white);
+      & .language-icon {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
 
   & nav {
     & ul {

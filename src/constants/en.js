@@ -55,6 +55,13 @@ export default {
   openHour: "Monday to Friday 8am - 8pm",
   phoneNumber: "(514) 430-6518",
 
+  // about page 
+  ourMission: "Our mission",
+  missionStatement: "We are committed to promoting fitness as a lifelong habit and a pathway to healthier living in the Montreal community through personalized, research-based programs. Our multidisciplinary team of physiotherapists, kinesiologists, personal trainers, and massage therapists seamlessly integrates injury prevention, rehabilitation, and performance enhancement to support each client’s unique goals. By fostering collaboration among professionals, we set new standards for multidisciplinary care, empowering individuals to achieve their full potential in a supportive and inclusive environment.",
+  meetOurTeam: "Meet our team",
+  bookHer: "Book With Her",
+  followUs: "Follow us",
+
   // footer
   receptionEmail: "logy.reception@gmail.com",
 

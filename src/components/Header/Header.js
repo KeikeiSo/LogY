@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { TranslationsContext } from '../../App';
 import './Header.css';
 import logo from '../../assets/logos/logo.png'; 
@@ -7,9 +7,24 @@ import ReserveButton from '../ReserveButton/ReserveButton';
 import { NavLink } from 'react-router-dom';
 const Header = ({ toggleLanguage }) => {
   const { translations, language } = useContext(TranslationsContext);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 50;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    document.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrolled]);
 
     return (
-      <header className="site-header">
+      <header className={`site-header ${scrolled ? 'scrolled' : ''}`}>
         <NavLink to="/"><img src={logo} alt="KinesioLog[Y] Logo" className="logo" /></NavLink>
         <nav>
           <ul>

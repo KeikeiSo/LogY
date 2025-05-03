@@ -2,16 +2,16 @@ import './App.css';
 import Header from './components/Header/Header'; // Adjust the path as needed
 import MainHero from './components/MainHero/MainHero';
 import SecondPage from './components/SecondPage/SecondPage';
-import TeamMemberComponent from './components/TeamMember/TeamMemberComponent';
+import TeamMemberPage from './components/TeamMember/TeamMemberPage';
 import FooterComponent from './components/FooterComponent/FooterComponent';
-import ContactPage from './components/ContactPage/ContactPage';
 import React, { useState, useEffect, createContext } from 'react';
 import enTranslations from './constants/en';
 import frTranslations from './constants/fr';
 import { BrowserRouter as Router, Route, Routes,useLocation } from 'react-router-dom';
 import HomePage from './components/HomePage/HomePage';
-import JoinPage from './components/JoinPage/JoinPage';
+import AboutPage from './components/AboutPage/AboutPage';
 import ServicesPage from './components/ServicesPage/ServicesPage';
+import ContactPage from './components/ContactPage/ContactPage';
 
 
 function App() {
@@ -42,14 +42,15 @@ function App() {
             <>
             <MainHero language={language} />
             <SecondPage language={language} />
-            <TeamMemberComponent language={language} />
+            <TeamMemberPage language={language} />
             <FooterComponent language={language} />
             </>
           } />
-          <Route path="/contact" element={<> <ContactPage language={language}/> <FooterComponent language={language} /></>} />
-          <Route path="/home" element={<> <HomePage language={language}/> <FooterComponent language={language} /></>} />
-          <Route path="/join" element={<> <JoinPage language={language}/> <FooterComponent language={language} /></>} />
+          <Route path="/home" element={<> <HomePage/> <FooterComponent /></>} />
+          <Route path="/about" element={<> <AboutPage/> <FooterComponent /></>} />
           <Route path="/services" element={<> <ServicesPage language={language}/> <FooterComponent language={language} /></>} />
+          <Route path="/contact" element={<> <ContactPage language={language}/> <FooterComponent language={language} /></>} />
+          <Route path="/team/:name" element={<> <TeamMemberPage/> <FooterComponent language={language} /></>} />
           {/* Define other routes here */}
         </Routes>
         </Router>

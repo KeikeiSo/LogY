@@ -1,0 +1,79 @@
+import React, { useContext } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import { TranslationsContext } from '../../App';
+import teamMembers from './TeamMemberData';
+import BookHerButton from '../BookHerButton/BookHerButton';
+import backwardArrow from '../../assets/icons/backward_arrow.svg';
+import './TeamMemberPage.css';
+
+const TeamMemberPage = () => {
+  const { translations } = useContext(TranslationsContext);
+  const { name } = useParams();
+  const memberName = name.replace(/-/g, ' ');
+  const member = teamMembers.find(m => 
+    m.name.toLowerCase() === memberName.toLowerCase()
+  );
+
+  if (!member) return <div>Team member not found</div>;
+
+  return (
+    <div className="team-member-page">
+      <div className='team-member-page-title'>
+        <Link to="/about" className="back-button">
+          <img src={backwardArrow} alt="Back to about page" />
+        </Link>
+        <h2 className="member-name">{member.name}</h2>
+      </div>
+      <div className='team-member-page-content'>
+        <div className="member-left-column">
+          <img 
+            src={member.imagePath} 
+            alt={member.name}
+            className="member-image"
+          />
+          {member.certifications.length > 0 && (
+            <div className="certifications">
+              <div className="certification-logos">
+                {member.certifications.map((cert, index) => (
+                  <img 
+                    key={index}
+                    src={cert}
+                    alt={`${member.name} certification`}
+                    className="certification-logo"
+                  />
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+
+        <div className="member-right-column">
+          <div className="member-education">
+            <p>{translations.lang === 'fr' ? member.educationDescriptionFr : member.educationDescription}</p>
+          </div>
+
+          <div className="member-experience">
+            <p>{translations.lang === 'fr' ? member.experienceDescriptionFr : member.experienceDescription}</p>
+          </div>
+
+          {member.specialties && (
+            <div className="member-specialties">
+              <p>{translations.lang === 'fr' ? member.specialtiesFr : member.specialties}</p>
+            </div>
+          )}
+
+          <div className="reserve-button-container">
+            <BookHerButton 
+              reserveUrl={member.reserveUrl}
+              colorOption='orange'
+            >
+              {translations.bookHer}
+            </BookHerButton>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default TeamMemberPage;

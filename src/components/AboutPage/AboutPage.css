@@ -1,0 +1,78 @@
+.about-page {
+  font-family: Avenir;
+  line-height: 1.6;
+  color: var(--text-primary);
+  padding: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  margin-top: 0%;
+  background: var(--bg-light);
+
+  & session {
+    text-align: left;
+  }
+
+  & h2 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.165px;
+  }
+
+  & h3 {
+    color: var(--text-focus);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.165px;
+  }
+
+  & p {
+    color: var(--text-secondary);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.165px;
+  }
+
+  & a {
+    color: var(--text-focus);
+  }
+
+}
+
+.about-page-mission {
+  display: block;
+  margin-top: 115px;
+}
+
+.about-page-our-team {
+  display: block;
+  margin-top: 60px;
+}
+
+.about-page-follow-us {
+  display: block;
+  margin-top: 60px;
+}
+
+
+  
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media (max-width: 600px) {
+  .join-page h1 {
+    font-size: 2rem; /* Smaller font size for h1 on smaller screens */
+  }
+  
+  .join-page p {
+    font-size: 1rem; /* Smaller font size for paragraphs on smaller screens */
+  }
+}
+  

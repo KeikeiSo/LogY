@@ -1,0 +1,21 @@
+.team-lineup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .team-lineup {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-lineup {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+}

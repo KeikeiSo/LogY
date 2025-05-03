@@ -55,6 +55,13 @@ export default {
   openHour: "Du lundi au vendredi, de 8h à 20h",
   phoneNumber: "(514) 430-6518",
 
+  // about page
+  ourMission: "Notre mission",
+  missionStatement: "Nous nous engageons à promouvoir la condition physique comme une habitude de vie et un chemin vers une meilleure santé dans la communauté montréalaise grâce à des programmes personnalisés et fondés sur la recherche. Notre équipe multidisciplinaire composée de physiothérapeutes, kinésiologues, entraîneurs personnels et massothérapeutes intègre harmonieusement la prévention des blessures, la réadaptation et l'amélioration des performances pour accompagner chaque client selon ses objectifs uniques. En favorisant la collaboration entre professionnels, nous établissons de nouvelles normes en matière de soins multidisciplinaires, permettant à chacun d’atteindre son plein potentiel dans un environnement bienveillant et inclusif.",
+  meetOurTeam: "Rencontrez notre équipe",
+  bookHer: "Réservez Avec Elle",
+  followUs: "Suivez-nous",
+
   // footer
   receptionEmail: "logy.reception@gmail.com",
 
