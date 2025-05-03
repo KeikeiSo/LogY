@@ -12,6 +12,15 @@ import boxing from "../../assets/services/boxing.png";
 import cupping from "../../assets/services/cupping.png";
 import acupuncture from "../../assets/services/acupuncture.png";
 
+const ServiceGroups = new Map (
+    [
+        ["Massage Therapy", "Massothérapie"],
+        ["Physical Rehabilitation", "Réadaptation Physique"],
+        ["Performance & Fitness", "Performance & Remise en Forme"],
+        ["Chinese Medicine Approach", "Approche en Médecine Chinoise"],
+    ]
+)
+
 const Services = [
     {
         name: "Swedish Massage",
@@ -24,7 +33,6 @@ const Services = [
         descriptionFr: "Conçu pour favoriser la relaxation, réduire le stress et améliorer la circulation grâce à des effleurages longs et apaisants, des pétrissages et des étirements doux pour soulager les tensions musculaires.",
         benefitsFr: ["relaxation", "anti-stress", "pression légère"],
         group: "Massage Therapy",
-        groupFr: "Massothérapie",
     },
     {
         name: "Deep Tissue Massage",
@@ -37,7 +45,6 @@ const Services = [
         descriptionFr: "Cible les couches profondes des muscles et des tissus conjonctifs pour soulager les tensions, douleurs et raideurs. En utilisant une pression ferme et lente, ce massage vise les zones de forte tension comme le cou, les épaules, le bas du dos et les jambes.",
         benefitsFr: ["raideur musculaire", "douleur cervicale", "mal de dos", "pression ferme", "récupération"],
         group: "Massage Therapy",
-        groupFr: "Massothérapie",
     },
     {
         name: "Therapeutic Massage",
@@ -50,7 +57,6 @@ const Services = [
         descriptionFr: "Approche personnalisée pour traiter des blessures, douleurs ou conditions physiques spécifiques. Combine diverses techniques pour guérir le corps, réduire les tensions musculaires, soulager la douleur et améliorer la flexibilité articulaire.",
         benefitsFr: ["guérison", "mobilité", "rééducation"],
         group: "Massage Therapy",
-        groupFr: "Massothérapie",
     },
     {
         name: "Sports Massage",
@@ -63,7 +69,6 @@ const Services = [
         descriptionFr: "Destiné aux athlètes et aux personnes actives, il utilise des exercices et des techniques de mouvement pour restaurer la fonction musculaire, réduire la douleur et améliorer la mobilité. Il renforce les muscles, augmente la flexibilité et optimise la mobilité articulaire.",
         benefitsFr: ["mobilité", "blessures sportives", "amélioration des performances"],
         group: "Massage Therapy",
-        groupFr: "Massothérapie",
     },
     {
         name: "Kinesitherapy",
@@ -89,7 +94,6 @@ const Services = [
         descriptionFr: "Utilise des outils spécialisés pour appliquer une pression contrôlée sur les tissus mous (muscles, tendons, fascias), favorisant la guérison et la mobilité. En éliminant les adhérences et tissus cicatriciels, cette technique améliore la circulation et l’amplitude de mouvement.",
         benefitsFr: ["relâchement myofascial", "mobilité", "tension musculaire"],
         group: "Massage Therapy",
-        groupFr: "Massothérapie",
     },
     {
         name: "Osteopathy",
@@ -102,7 +106,6 @@ const Services = [
         descriptionFr: "Traitement holistique utilisant des manipulations manuelles pour renforcer le système musculosquelettique et traiter les dysfonctions physiques. Les ostéopathes se concentrent sur l’interconnexion des muscles, articulations et os pour améliorer la mobilité et soulager la douleur.",
         benefitsFr: ["dysfonction articulaire", "mauvais alignement", "douleur musculaire"],
         group: "Physical Rehabilitation",
-        groupFr: "Réadaptation Physique",
     },
     {
         name: "Physiotherapy",
@@ -115,7 +118,6 @@ const Services = [
         descriptionFr: "Aide à restaurer et maximiser les fonctions physiques grâce à des mouvements ciblés, des exercices, des thérapies manuelles et de l’éducation. Que ce soit pour une rééducation post-blessure, la gestion de douleurs chroniques ou l’amélioration de la mobilité après une opération, la physiothérapie vise à améliorer la santé physique globale, soulager l’inconfort et promouvoir le bien-être à long terme.",
         benefitsFr: ["réadaptation", "blessure", "récupération"],
         group: "Physical Rehabilitation",
-        groupFr: "Réadaptation Physique",
     },
     {
         name: "Kinesiology",
@@ -128,7 +130,6 @@ const Services = [
         descriptionFr: "Spécialisée dans la prévention des blessures et l’amélioration de la performance physique par l’étude de la biomécanique et de la fonction musculaire. Grâce à des exercices, des étirements, des corrections posturales et des ajustements ergonomiques, elle améliore l’efficacité des mouvements, la posture et les performances physiques globales.",
         benefitsFr: ["prévention des blessures", "correction posturale", "entraînement fonctionnel"],
         group: "Performance & Fitness",
-        groupFr: "Performance & Remise en Forme",
     },
     {
         name: "Personal Training",
@@ -141,7 +142,6 @@ const Services = [
         descriptionFr: "Programmes d’exercices sur mesure adaptés à des objectifs spécifiques : perte de poids, prise de muscle ou bien-être général. Destiné à tous les niveaux, l’entraîneur personnel aide à améliorer la force, l’endurance et la mobilité tout en guidant vers des objectifs santés personnelles.",
         benefitsFr: ["remise en forme", "bien-être", "perte de poids", "prise de muscle"],
         group: "Performance & Fitness",
-        groupFr: "Performance & Remise en Forme",
     },
     {
         name: "Boxing",
@@ -154,7 +154,6 @@ const Services = [
         descriptionFr: "Propose un entraînement intensif complet qui allie cardio haute intensité et technique de combat pour brûler des calories, améliorer la condition physique et développer la force. Idéal pour se défouler tout en travaillant l’endurance, la coordination et la puissance musculaire.",
         benefitsFr: ["cardio","force", "perte de poids"],
         group: "Performance & Fitness",
-        groupFr: "Performance & Remise en Forme",
     },
     {
         name: "Cupping Therapy",
@@ -167,7 +166,6 @@ const Services = [
         descriptionFr: "Place des ventouses sur la peau pour stimuler la circulation sanguine, relâcher les tensions musculaires et accélérer la guérison. Cette technique améliore la circulation, réduit la douleur et détend les muscles. Souvent combinée au massage, elle est bénéfique pour les maux de dos, douleurs musculaires chroniques, problèmes respiratoires et le stress.",
         benefitsFr: ["amélioration de la circulation", "tension musculaire", "mal de dos", "stress"],
         group: "Chinese Medicine Approach",
-        groupFr: "Approche en Médecine Chinoise",
     },
     {
         name: "Acupuncture",
@@ -180,7 +178,6 @@ const Services = [
         descriptionFr: "Pratique de médecine traditionnelle chinoise utilisant de fines aiguilles pour stimuler des points précis du corps, rétablissant le flux énergétique et l’équilibre. Elle favorise la guérison naturelle, soulage la douleur, réduit l’inflammation et améliore la santé globale.",
         benefitsFr: ["rétablir l’énergie", "stress", "douleur chronique", "anxiété", "insomnie "],
         group: "Chinese Medicine Approach",
-        groupFr: "Approche en Médecine Chinoise",
     },
     // any new service should be added in below format
     /* 
@@ -199,3 +196,6 @@ const Services = [
     },
     */
 ]
+
+export default Services;
+export {ServiceGroups};

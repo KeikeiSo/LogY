@@ -76,7 +76,7 @@
       font-size: 18px;
     }
   
-    & .reserve-button {
+    & .reserve-button-orange {
       margin-top: 40px;
     }
   }
@@ -334,6 +334,11 @@
         margin: 0;
         color: var(--text-primary);
       }
+    }
+
+    & .reserve-button-orange {
+      margin-top: 30px;
+      width: 150px;  
     }
   }
 }

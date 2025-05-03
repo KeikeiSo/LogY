@@ -4,16 +4,15 @@ import { TranslationsContext } from '../../App';
 import ReserveButton from '../ReserveButton/ReserveButton';
 
 const ServiceTeaser = ({ service }) => {
-  const { translations } = useContext(TranslationsContext);
+  const { translations, language} = useContext(TranslationsContext);
 
   return (
     <div className="service-teaser">
+      <h3 className="service-name">{language === 'fr' ? service.nameFr : service.name}</h3>
       <img src={service.image} alt={service.name} className="service-image" />
-      <h3 className="service-name">{service.name}</h3>
-      <p className="service-description">{service.description}</p>
+      <p className="service-description">{language === 'fr' ? service.descriptionFr : service.description}</p>
       
       <div className="service-prices">
-        <h4>{translations.prices || 'Prices'}:</h4>
         <ul>
           {service.prices.map((price, index) => (
             <li key={index}>{price}</li>
@@ -22,9 +21,12 @@ const ServiceTeaser = ({ service }) => {
       </div>
 
       <div className="service-benefits">
-        <h4>{translations.benefits || 'Benefits'}:</h4>
         <ul>
-          {service.benefits.map((benefit, index) => (
+          {language === 'fr' ? 
+          service.benefitsFr.map((benefit, index) => (
+            <li key={index}>{benefit}</li>
+          )) :
+          service.benefits.map((benefit, index) => (
             <li key={index}>{benefit}</li>
           ))}
         </ul>
@@ -34,7 +36,7 @@ const ServiceTeaser = ({ service }) => {
         reserveUrl={service.reserveUrl}
         colorOption="green"
       >
-        {translations.book || 'Book'}
+        {translations.book}
       </ReserveButton>
     </div>
   );

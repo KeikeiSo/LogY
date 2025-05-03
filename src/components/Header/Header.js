@@ -34,7 +34,7 @@ const Header = ({ toggleLanguage }) => {
           <ul>
             <li><NavLink to="/home">{translations.home}</NavLink></li>
             <li><NavLink to="/about">{translations.about}</NavLink></li>
-            <li><NavLink to="/service">{translations.services}</NavLink></li>
+            <li><NavLink to="/services">{translations.services}</NavLink></li>
             <li><NavLink to="/contact">{translations.contact}</NavLink></li>
           </ul>
         </nav>

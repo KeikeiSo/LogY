@@ -63,6 +63,9 @@ export default {
   meetOurTeam: "Meet our team",
   followUs: "Follow us",
 
+  // service page
+  allPricesTaxExcluded: "*All prices are tax excluded",
+
   // footer
   receptionEmail: "logy.reception@gmail.com",
 

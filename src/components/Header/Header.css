@@ -51,9 +51,8 @@
       }
     }
   }
-  .reserve-button {
-    position: fixed;
-    right: 150px;
+  .reserve-button-orange {
+    margin-left: 20px;
   }
 }
 

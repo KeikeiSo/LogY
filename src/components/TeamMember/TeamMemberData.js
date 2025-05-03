@@ -1,7 +1,7 @@
-import ruoyanL from '../../assets/teamMember/ruoyan_liu.jpg';
-import alianaL from '../../assets/teamMember/aliana_liang.jpg';
-import caline from '../../assets/teamMember/caline.jpg';
-import choleN from '../../assets/teamMember/chole_nassar.jpg'
+import ruoyanL from '../../assets/teamMember/ruoyan_liu.png';
+import alianaL from '../../assets/teamMember/aliana_liang.png';
+import caline from '../../assets/teamMember/caline.png';
+import choleN from '../../assets/teamMember/chole_nassar.png'
 import csep from '../../assets/logos/csep.png';
 import amq from '../../assets/logos/amq.png';
 import nsca from '../../assets/logos/nsca.png';
@@ -67,7 +67,7 @@ const teamMembers = [
 + '2 fois médaillée d’argent aux Championnats RSEQ collégiaux de badminton (2023 et 2024)\n'
 + 'Médaillée d’argent aux Championnats ABC de badminton (2024)',
       specialtiesFr: "",
-    }
+    },
   ];
   
   export default teamMembers;

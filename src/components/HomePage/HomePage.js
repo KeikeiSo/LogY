@@ -20,6 +20,9 @@ import phoneIcon from '../../assets/icons/phone.svg';
 import { NavLink } from 'react-router-dom';
 
 const HomePage = () => {
+  // reserve url for the reserve button
+  const reserveUrl = "#"
+
   const { translations } = useContext(TranslationsContext);
   const sliderRef = useRef(null);
   const [showLeftArrow, setShowLeftArrow] = useState(false);
@@ -67,7 +70,12 @@ const HomePage = () => {
           <h1>{translations.welcome}</h1>
           <p>{translations.homeDescription}</p>
           <p>{translations.servicesList}</p>
-          <ReserveButton />
+          <ReserveButton 
+            reserveUrl={reserveUrl}
+            colorOption='orange'
+          >
+            {translations.reserve}
+        </ReserveButton>
         </div>
       </section>
       <section className='home-page--service'>
@@ -196,7 +204,12 @@ const HomePage = () => {
               <img src={phoneIcon} alt="Phone" />
               <p>{translations.phoneNumber}</p>
             </div>
-            <ReserveButton />
+            <ReserveButton 
+            reserveUrl={reserveUrl}
+            colorOption='orange'
+              >
+            {translations.reserve}
+            </ReserveButton>
           </div>
         </div>
       </section>

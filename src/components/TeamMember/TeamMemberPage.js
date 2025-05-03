@@ -7,7 +7,7 @@ import './TeamMemberPage.css';
 import ReserveButton from '../ReserveButton/ReserveButton';
 
 const TeamMemberPage = () => {
-  const { translations } = useContext(TranslationsContext);
+  const { translations, language } = useContext(TranslationsContext);
   const { name } = useParams();
   const memberName = name.replace(/-/g, ' ');
   const member = teamMembers.find(m => 
@@ -49,16 +49,16 @@ const TeamMemberPage = () => {
 
         <div className="member-right-column">
           <div className="member-education">
-            <p>{translations.lang === 'fr' ? member.educationDescriptionFr : member.educationDescription}</p>
+            <p>{language === 'fr' ? member.educationDescriptionFr : member.educationDescription}</p>
           </div>
 
           <div className="member-experience">
-            <p>{translations.lang === 'fr' ? member.experienceDescriptionFr : member.experienceDescription}</p>
+            <p>{language === 'fr' ? member.experienceDescriptionFr : member.experienceDescription}</p>
           </div>
 
           {member.specialties && (
             <div className="member-specialties">
-              <p>{translations.lang === 'fr' ? member.specialtiesFr : member.specialties}</p>
+              <p>{language === 'fr' ? member.specialtiesFr : member.specialties}</p>
             </div>
           )}
 

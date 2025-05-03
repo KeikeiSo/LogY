@@ -7,7 +7,7 @@
   --secondary: #38b2ac;
 
   /* Accent Colors */
-  --accent: #ed8936;
+  --accent: #F49C31;
 
   /* Text Colors */
   --text-primary: #1C4F36;
@@ -28,6 +28,11 @@
   --btn-primary-hover: var(--primary-light);
   --btn-border: #AEAEB2;
   --btn-subscribe: #C3E5D7;
+
+  /* Filter Colors */
+  --filter-text: #1F3329;
+  --filter-bg: #D3DED8;
+  --filter-border: #84998E;
 
   /* Border Colors */
   --border:  #84998E;

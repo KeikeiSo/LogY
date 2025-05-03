@@ -42,13 +42,13 @@ function App() {
             <>
             <MainHero language={language} />
             <SecondPage language={language} />
-            <TeamMemberPage language={language} />
+            <TeamMemberPage />
             <FooterComponent language={language} />
             </>
           } />
           <Route path="/home" element={<> <HomePage/> <FooterComponent /></>} />
           <Route path="/about" element={<> <AboutPage/> <FooterComponent /></>} />
-          <Route path="/services" element={<> <ServicesPage language={language}/> <FooterComponent language={language} /></>} />
+          <Route path="/services" element={<> <ServicesPage/> <FooterComponent /></>} />
           <Route path="/contact" element={<> <ContactPage language={language}/> <FooterComponent language={language} /></>} />
           <Route path="/team/:name" element={<> <TeamMemberPage/> <FooterComponent language={language} /></>} />
           {/* Define other routes here */}

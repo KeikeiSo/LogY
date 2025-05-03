@@ -1,123 +1,73 @@
-/* ServicesPage.css Adjustments for Separation Between Sections */
+.services-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  color: var(--text-primary);
 
-.servicesPage {
+  & > h2 {
+    margin-top: 80px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.165px;
+  }
+
+  & .filter-buttons {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    overflow: hidden; /* Prevent horizontal scroll caused by the added margins */
-  }
-  
-  .sectionA {
-    position: relative;
-    width: 100%; /* Adjust width to account for margin */
-    height: calc(100vh); /* Adjust height to account for margin, ensuring sections are still full-screen */
-    margin: 5px; /* Adds space around each section */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-    transition: transform 0.3s ease, margin 0.3s ease; /* Include margin in the transition for a smoother effect */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth */
-  }
-  
-  .sectionA::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s ease;
-  }
-  
-  .sectionA:hover::before {
-    background: rgba(0, 0, 0, 0.7);
-  }
-  
-  .sectionA section :hover {
-    transform: scale(1.03); /* Slightly reduced scale effect to accommodate margin */
-    margin: 10px; /* Reduce margin on hover to allow for the scale effect without affecting layout */
-  }
-  
-  .contentA {
-    position: relative;
-    text-align: center;
-    color: white;
-    padding: 20px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-  
-  .h2A, .pA {
-    margin: 0 0 20px;
-  }
-  
-  .h2A {
-    font-size: 2.5em;
-  }
-  
-  .pA {
-    font-size: 1.4em;
-    max-width: 80%;
-    line-height: 1.6;
-  }
-  
-  .read-button {
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-    padding: 8px 20px; /* Smaller padding than cta-button */
-    font-size: 1.2rem; /* Smaller font size than cta-button */
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    display: block;
-    margin: 10px auto;
-    clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%); /* Angled corners */
-    opacity: 0;
-    animation: fadeIn 2s ease forwards;
-    animation-delay: 1.5s;
-  }
-  
-  .read-button:hover {
-    background-color: white;
-    color: black;
-  }
-  @media (max-width: 768px) {
-    .sectionA { /* Ensure this targets the correct class if your sections use a class name with 'A' */
-      width: calc(100vw - 10px); /* Account for margin */
-      height: auto; /* Allows the section to expand based on content, ensuring text fits */
-      margin: 5px;
-      padding: 20px; /* Adds padding to prevent text from touching the edges */
-    }
-  
-    .h2A, .pA { /* Use these class names if they're correct for your headings and paragraphs */
-      padding: 0 10px; /* Add horizontal padding */
-    }
-  
-    .h2A {
-      font-size: 4vw; /* Adjust font size based on viewport width, making it responsive */
-      max-font-size: 2em; /* Ensures font size does not become too large on slightly bigger screens */
-    }
-  
-    .pA {
-      font-size: 3.5vw; /* Similarly, adjust paragraph font size based on viewport width */
-      max-font-size: 1.2em; /* Prevents the font from being too large on bigger screens */
-      word-wrap: break-word; /* Ensures long words do not overflow */
-    }
-  
-    .read-button {
-      padding: 8px 16px; /* Adjust button padding */
-      font-size: 3vw; /* Make button text size responsive */
-      max-font-size: 1rem; /* Prevents the button font from being too large */
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+    justify-content: flex-start;
+
+    & .filter-button {
+      color: var(--filter-text);
+      font-family: Avenir;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      padding: 8px 12px;
+      border: 1px solid var(--filter-border);
+      background: transparent;
+      border-radius: 100px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: rgba(101, 150, 130, 0.1);
+      }
+
+      &.active {
+        background: var(--filter-bg);
+      }
     }
   }
 
-  
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  align-items: start; /* Align items at top to allow different heights */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-buttons {
+    gap: 8px;
+  }
+
+  .filter-button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}

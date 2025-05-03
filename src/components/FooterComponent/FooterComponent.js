@@ -14,6 +14,10 @@ import facebookIcon from '../../assets/icons/facebook.svg';
 import rednoteIcon from '../../assets/icons/rednote.png';
 
 const FooterComponent = () => {
+  const instagramUrl = "https://www.instagram.com/kinesio.log.y/";
+  const facebookUrl = "https://www.facebook.com/share/19HL4T2ufw/?mibextid=wwXIfr";
+  const rednoteUrl = "https://www.xiaohongshu.com/user/profile/5edc356f0000000001001ad0?xsec_token=YB3Z9S5dlK9g3hnZqLNpVIs-k46OoMXy2AQ1fdsToiVEQ=&xsec_source=app_share&xhsshare=CopyLink&appuid=5c7a473b0000000016029f15&apptime=1746190852&share_id=fa4f704b00d94a06ace3e50d77963490";
+
   const { translations } = useContext(TranslationsContext);
   const [email, setEmail] = useState('');
   const [showPopup, setShowPopup] = useState(false);
@@ -103,13 +107,13 @@ const FooterComponent = () => {
           )}
         </div>
         <div className='footer-social-media'>
-          <a href="https://www.instagram.com/kinesio.log.y/" target="_blank" rel="noopener noreferrer">
+          <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
             <img src={instagramIcon} alt="Instagram" />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href={facebookUrl} target="_blank" rel="noopener noreferrer">
             <img src={facebookIcon} alt="Facebook" />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href={rednoteUrl} target="_blank" rel="noopener noreferrer">
             <img src={rednoteIcon} alt="RedNote" />
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer">
