@@ -2,22 +2,51 @@
 
 
 .reserve-button {
-    & button {
-        display: inline-flex;
-        padding: 10px 26px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        flex-shrink: 0;
-        border-radius: 10px;
-        border: none;
-        background: var(--btn-bg);
-        color: var(--btn-primary);
-        font-family: Avenir;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        letter-spacing: -0.165px;
+    background-color: var(--bg-dark);
+    color: var(--primary-light);
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.165px;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    
+    &:hover {
+        background-color: var(--text-focus);
     }
-}
+  }
+  
+
+  
+  .reserve-button-orange {
+
+    display: inline-flex;
+    padding: 10px 26px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--btn-bg);
+    color: var(--btn-primary);
+    font-family: Avenir;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.165px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        background-color: var(--accent);
+    }
+  }
+  

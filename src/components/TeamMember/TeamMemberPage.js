@@ -2,9 +2,9 @@ import React, { useContext } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { TranslationsContext } from '../../App';
 import teamMembers from './TeamMemberData';
-import BookHerButton from '../BookHerButton/BookHerButton';
 import backwardArrow from '../../assets/icons/backward_arrow.svg';
 import './TeamMemberPage.css';
+import ReserveButton from '../ReserveButton/ReserveButton';
 
 const TeamMemberPage = () => {
   const { translations } = useContext(TranslationsContext);
@@ -63,12 +63,12 @@ const TeamMemberPage = () => {
           )}
 
           <div className="reserve-button-container">
-            <BookHerButton 
+            <ReserveButton 
               reserveUrl={member.reserveUrl}
               colorOption='orange'
             >
               {translations.bookHer}
-            </BookHerButton>
+            </ReserveButton>
           </div>
         </div>
       </div>

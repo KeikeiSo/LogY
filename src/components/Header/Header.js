@@ -5,7 +5,11 @@ import logo from '../../assets/logos/logo.png';
 import icon from '../../assets/icons/language_switch_icon.svg'
 import ReserveButton from '../ReserveButton/ReserveButton';
 import { NavLink } from 'react-router-dom';
+
 const Header = ({ toggleLanguage }) => {
+  // reserve button url
+  const reserveUrl = "https://meet.google.com/landing"
+
   const { translations, language } = useContext(TranslationsContext);
   const [scrolled, setScrolled] = useState(false);
 
@@ -40,7 +44,12 @@ const Header = ({ toggleLanguage }) => {
                 {language === 'en' ? 'Français' : 'English'}
             </button>
         </div>
-        <ReserveButton language={language}/>
+        <ReserveButton 
+          reserveUrl={reserveUrl}
+          colorOption='orange'
+        >
+          {translations.reserve}
+        </ReserveButton>
       </header>
     );
   };

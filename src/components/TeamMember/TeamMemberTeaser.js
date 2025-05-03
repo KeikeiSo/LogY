@@ -3,7 +3,7 @@ import './TeamMemberTeaser.css';
 import { Link } from 'react-router-dom';
 import { TranslationsContext } from '../../App';
 import arrow from '../../assets/icons/acline_arrow.svg';
-import BookHerButton from '../BookHerButton/BookHerButton';
+import ReserveButton from '../ReserveButton/ReserveButton';
 
 const TeamMemberTeaser = ({ member}) => {
   const { translations } = useContext(TranslationsContext);
@@ -16,12 +16,12 @@ const TeamMemberTeaser = ({ member}) => {
         <img src={arrow} alt='link arrow'></img>
       </Link>
       <p className="teaser-education">{member.education}</p>
-      <BookHerButton 
+      <ReserveButton 
         reserveUrl={member.reserveUrl}
         colorOption='green'
       >
         {translations.bookHer}
-      </BookHerButton>
+      </ReserveButton>
     </div>
   );
 };

@@ -1,17 +1,15 @@
-import React, { useContext } from 'react';
-import { TranslationsContext } from '../../App';
+import React from 'react';
 import './ReserveButton.css';
 
-const ReserveButton = () => {
-    const { translations } = useContext(TranslationsContext);
-    
+const ReserveButton = ({ reserveUrl, colorOption = 'green', children }) => {
     return (
-        <div className="reserve-button">
-            <button onClick={() => window.location.href = 'https://example.com'}>
-                {translations.reserve}
-            </button>
-        </div>
-    )
-}
+      <button 
+        className={colorOption === 'orange' ? 'reserve-button-orange' : 'reserve-button'}
+        onClick={() => window.location.href = reserveUrl}
+      >
+        {children}
+      </button>
+    );
+  };
 
 export default ReserveButton;

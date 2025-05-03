@@ -7,6 +7,8 @@ export default {
 
   // reserve button
   reserve: "Réservez",
+  book: "Réserver",
+  bookHer: "Réservez Avec Elle",
 
   // home page
   welcome: "De la récupération à la performance, nous avons tout ce qu’il vous faut !",
@@ -59,7 +61,6 @@ export default {
   ourMission: "Notre mission",
   missionStatement: "Nous nous engageons à promouvoir la condition physique comme une habitude de vie et un chemin vers une meilleure santé dans la communauté montréalaise grâce à des programmes personnalisés et fondés sur la recherche. Notre équipe multidisciplinaire composée de physiothérapeutes, kinésiologues, entraîneurs personnels et massothérapeutes intègre harmonieusement la prévention des blessures, la réadaptation et l'amélioration des performances pour accompagner chaque client selon ses objectifs uniques. En favorisant la collaboration entre professionnels, nous établissons de nouvelles normes en matière de soins multidisciplinaires, permettant à chacun d’atteindre son plein potentiel dans un environnement bienveillant et inclusif.",
   meetOurTeam: "Rencontrez notre équipe",
-  bookHer: "Réservez Avec Elle",
   followUs: "Suivez-nous",
 
   // footer
