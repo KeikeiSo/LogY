@@ -1,4 +1,5 @@
-import React, { useState, useContext} from 'react';
+import React, { useState, useContext, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import './ServicesPage.css';
 import Services, {ServiceGroups} from '../ServiceComponent/ServicesData';
 import ServiceTeaser from '../ServiceComponent/ServiceTeaser';
@@ -6,7 +7,16 @@ import { TranslationsContext } from '../../App';
 
 const ServicesPage = () => {
   const { translations, language } = useContext(TranslationsContext);
+  const [searchParams, setSearchParams] = useSearchParams();
   const [activeFilter, setActiveFilter] = useState('All');
+
+  // Initialize filter from URL on component mount
+  useEffect(() => {
+    const filterFromUrl = searchParams.get('filter');
+    if (filterFromUrl && ServiceGroups.has(filterFromUrl)) {
+      setActiveFilter(filterFromUrl);
+    }
+  }, [searchParams]);
   
   // Get unique service groups
   const serviceGroups = ['All', ...ServiceGroups.keys()];
@@ -24,7 +34,10 @@ const ServicesPage = () => {
           <button
             key={group}
             className={`filter-button ${activeFilter === group ? 'active' : ''}`}
-            onClick={() => setActiveFilter(group)}
+            onClick={() => {
+              setActiveFilter(group);
+              setSearchParams(group === 'All' ? {} : { filter: group });
+            }}
           >
             {language === 'fr' ? ( group === 'All' ? 'Tout' : ServiceGroups.get(group) ) : group}
           </button>

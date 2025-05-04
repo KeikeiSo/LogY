@@ -103,23 +103,23 @@ const HomePage = () => {
         <div className='home-page--service-photos'>
           <div className='home-page--service-photo'>
             <img src={massageImg} alt="Massage Therapy" />
-            <NavLink>{translations.massage}</NavLink>
+            <NavLink to="/services?filter=Massage+Therapy">{translations.massage}</NavLink>
           </div>
           <div className='home-page--service-photo'>
             <img src={rehabImg} alt="Physical Rehabilitation" />
-            <NavLink>{translations.physicRehab}</NavLink>
+            <NavLink to="/services?filter=Physical+Rehabilitation">{translations.physicRehab}</NavLink>
           </div>
           <div className='home-page--service-photo'>
             <img src={fitnessImg} alt="Performance Fitness" />
-            <NavLink>{translations.perforFitness}</NavLink>
+            <NavLink to="/services?filter=Performance+%26+Fitness">{translations.perforFitness}</NavLink>
           </div>
           <div className='home-page--service-photo'>
             <img src={chineseMedImg} alt="Chinese Medicine" />
-            <NavLink>{translations.chineseMedicine}</NavLink>
+            <NavLink to="/services?filter=Chinese+Medicine+Approach">{translations.chineseMedicine}</NavLink>
           </div>
         </div>
         <div className='home-page--service-checkall'>
-          <button onClick={() => window.location.href = 'https://example.com'}>{"Check All"}</button>
+          <button onClick={() => window.location.href += 'services'}>{"Check All"}</button>
         </div>
       </section>
       <section className='home-page--professional'>

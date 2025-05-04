@@ -32,7 +32,7 @@ const Header = ({ toggleLanguage }) => {
         <NavLink to="/"><img src={logo} alt="KinesioLog[Y] Logo" className="logo" /></NavLink>
         <nav>
           <ul>
-            <li><NavLink to="/home">{translations.home}</NavLink></li>
+            <li><NavLink to="">{translations.home}</NavLink></li>
             <li><NavLink to="/about">{translations.about}</NavLink></li>
             <li><NavLink to="/services">{translations.services}</NavLink></li>
             <li><NavLink to="/contact">{translations.contact}</NavLink></li>

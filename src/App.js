@@ -1,7 +1,5 @@
 import './App.css';
 import Header from './components/Header/Header'; // Adjust the path as needed
-import MainHero from './components/MainHero/MainHero';
-import SecondPage from './components/SecondPage/SecondPage';
 import TeamMemberPage from './components/TeamMember/TeamMemberPage';
 import FooterComponent from './components/FooterComponent/FooterComponent';
 import React, { useState, useEffect, createContext } from 'react';
@@ -40,13 +38,10 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-            <MainHero language={language} />
-            <SecondPage language={language} />
-            <TeamMemberPage />
-            <FooterComponent language={language} />
+            <HomePage/>
+            <FooterComponent/>
             </>
           } />
-          <Route path="/home" element={<> <HomePage/> <FooterComponent /></>} />
           <Route path="/about" element={<> <AboutPage/> <FooterComponent /></>} />
           <Route path="/services" element={<> <ServicesPage/> <FooterComponent /></>} />
           <Route path="/contact" element={<> <ContactPage language={language}/> <FooterComponent language={language} /></>} />

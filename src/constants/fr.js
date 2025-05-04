@@ -66,6 +66,18 @@ export default {
   // service page
   allPricesTaxExcluded: "* Tous les prix sont hors taxes",
 
+  // contact page
+  contactUs: "Nous contacter",
+  findUs: "Nous Trouver",
+  sendMessage: "Envoyer un message",
+  firstName: "Prénom",
+  lastName: "Nom de famille",
+  email: "Courriel",
+  phone: "Numéro de téléphone",
+  message: "Votre message",
+  send: "Envoyer",
+  messageSent: "Message envoyé ! Nous vous répondrons bientôt.",
+
   // footer
   receptionEmail: "logy.reception@gmail.com",
 

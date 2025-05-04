@@ -19,6 +19,7 @@
   /* Background Colors */
   --bg-light: #F5F3EF;
   --bg-dark: #1C4F36;
+  --header-bg: #246645;
   --bg-white: #F3F5F4;
   --bg-gray: #e2e8f0;
 
@@ -36,6 +37,7 @@
 
   /* Border Colors */
   --border:  #84998E;
+  --input-border: #AEBFB7;
 
   /* Alert Colors */
   --success: #48bb78;

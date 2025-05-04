@@ -8,10 +8,11 @@ import emailIcon from '../../assets/icons/email_light.svg';
 import sendEmailIcon from '../../assets/send_email.svg';
 import checkIcon from '../../assets/icons/check.svg';
 import closeIcon from '../../assets/icons/close.svg';
-import instagramIcon from '../../assets/icons/instagram.svg';
-import wechatIcon from '../../assets/icons/wechat.svg';
-import facebookIcon from '../../assets/icons/facebook.svg';
-import rednoteIcon from '../../assets/icons/rednote.png';
+import instagramIcon from '../../assets/socialMedia/instagram.svg';
+import wechatIcon from '../../assets/socialMedia/wechat.svg';
+import facebookIcon from '../../assets/socialMedia/facebook.svg';
+import rednoteIcon from '../../assets/socialMedia/rednote.png';
+import emailjs from 'emailjs-com';
 
 const FooterComponent = () => {
   const instagramUrl = "https://www.instagram.com/kinesio.log.y/";
@@ -40,7 +41,18 @@ const FooterComponent = () => {
     }
   };
 
-  const sendEmail = async (email) => {}
+  const sendEmail = async (email) => {
+    emailjs.send(
+      "service_rg5dmdk","template_wf9ym5q", {"email":email}, "7m1pKgjwOPTpOCozk"
+    ).then(
+      (result) => {
+        console.info('Email sent!', result.text);
+      },
+      (error) => {
+        console.error('Error:', error.text);
+      }
+    )
+  }
   return (
     <div className="footer-container">
       <div className='footer-contact'>
