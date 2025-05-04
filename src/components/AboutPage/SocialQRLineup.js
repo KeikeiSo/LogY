@@ -4,7 +4,6 @@ import facebookQR from '../../assets/socialMedia/qrcode/facebook_qrcode.svg';
 import instagramQR from '../../assets/socialMedia/qrcode/instagram_qrcode.svg';
 import rednoteQR from '../../assets/socialMedia/qrcode/rednote_qrcode.svg';
 import wechatQR from '../../assets/socialMedia/qrcode/wechat_qrcode.png';
-import { redirect } from 'react-router-dom';
 
 const SocialQRLineup = () => {
   const socials = [
