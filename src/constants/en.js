@@ -1,4 +1,4 @@
-export default {
+ const enTranslations = {
   // header
   home: "Home",
   about: "About",
@@ -97,3 +97,5 @@ export default {
   
   // Add more translations as needed
 };
+
+export default enTranslations;

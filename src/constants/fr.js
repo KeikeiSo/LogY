@@ -1,4 +1,4 @@
-export default {
+const frTranslations = {
   // header
   home: "Accueil",
   about: "À propos",
@@ -95,3 +95,4 @@ export default {
   servicesList: "Kinésiologie • Massage • Réadaptation • Fitness",
   
 };
+export default frTranslations;

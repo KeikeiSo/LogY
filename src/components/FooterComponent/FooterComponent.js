@@ -128,7 +128,7 @@ const FooterComponent = () => {
           <a href={rednoteUrl} target="_blank" rel="noopener noreferrer">
             <img src={rednoteIcon} alt="RedNote" />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.wechat.com/" target="_blank" rel="noopener noreferrer">
             <img src={wechatIcon} alt="WeChat" />
           </a>
         </div>
