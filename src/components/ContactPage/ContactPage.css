@@ -6,13 +6,6 @@
   gap: 20%;
   font-family: Avenir;
 
-  opacity: 0; /* Set initial opacity to 0 for fade-in effect */
-  animation: fadeIn 1.5s ease forwards; /* Apply fade-in animation */
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }
 
   & h2 {
     font-size: 30px;
