@@ -34,7 +34,7 @@ function App() {
       <div className="App">
         <Router>
         <ScrollToTop />
-        <Header language={language} toggleLanguage={toggleLanguage} />
+        <Header toggleLanguage={toggleLanguage} />
         <Routes>
           <Route path="/" element={
             <>
@@ -44,8 +44,8 @@ function App() {
           } />
           <Route path="/about" element={<> <AboutPage/> <FooterComponent /></>} />
           <Route path="/services" element={<> <ServicesPage/> <FooterComponent /></>} />
-          <Route path="/contact" element={<> <ContactPage language={language}/> <FooterComponent language={language} /></>} />
-          <Route path="/team/:name" element={<> <TeamMemberPage/> <FooterComponent language={language} /></>} />
+          <Route path="/contact" element={<> <ContactPage/> <FooterComponent/></>} />
+          <Route path="/team/:name" element={<> <TeamMemberPage/> <FooterComponent/></>} />
           {/* Define other routes here */}
         </Routes>
         </Router>
