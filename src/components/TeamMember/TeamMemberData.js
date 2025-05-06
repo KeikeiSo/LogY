@@ -11,7 +11,7 @@ const teamMembers = [
     {
       name: "Ruoyan Liu",
       imagePath: ruoyanL,
-      reserveUrl: "https://docs.google.com/forms/u/0/",
+      reserveUrl: "https://forms.gle/AT8h5w7q477KVPTR7",
       education: "B.Sc (Honours) Kinesiology",
       certifications: [csep, amq],
       educationDescription: "Ruoyan completed her Honours degree in Kinesiology at McGill University, where her research focused on gaining a broader understanding of the Calf Raise Test for rehabilitation and shoulder occupational health.",
@@ -24,7 +24,7 @@ const teamMembers = [
     {
       name: "Aliana Liang",
       imagePath: alianaL,
-      reserveUrl: "https://docs.google.com/forms/u/0/",
+      reserveUrl: "https://forms.gle/AT8h5w7q477KVPTR7",
       education: "B.Sc Biochemistry",
       certifications: [pn, nsca, amq],
       educationDescription: "Aliana completed her Bachelor of Science with a specialization in Biochemistry. Her journey as a semi-professional volleyball player since primary school led her to obtain the NSCA-CPT (Certified Personal Trainer) certification. As a bodybuilder herself, she understands the critical role of nutrition in achieving an ideal body composition, which inspired her to earn the Precision Nutrition certification.Additionally, Aliana has exceptional skills in massage therapy, supported by her deep knowledge of musculoskeletal anatomy and biomechanics.",
@@ -37,7 +37,7 @@ const teamMembers = [
     {
       name: "Chloé Nassar",
       imagePath: choleN,
-      reserveUrl: "https://docs.google.com/forms/u/0/",
+      reserveUrl: "https://forms.gle/AT8h5w7q477KVPTR7",
       education: "B.Sc (Honours) Kinesiology",
       certifications: [],
       educationDescription: "With a kinesiology degree and an honours thesis focused on biomechanics research within the field of physiotherapy, Chloé brings a deep understanding of the human body and movement to every session. She combines her academic background with a passion for exercise to deliver personalized and effective fitness sessions tailored to your goals and needs.",
@@ -50,7 +50,7 @@ const teamMembers = [
     {
       name: "Caline",
       imagePath: caline,
-      reserveUrl: "https://docs.google.com/forms/u/0/",
+      reserveUrl: "https://forms.gle/AT8h5w7q477KVPTR7",
       education: "Kinesiology Student",
       certifications: [],
       educationDescription: "Although Caline just began her science degree in kinesiology at McGill University, her passion and discipline for sports have forged the person she is today. Former karate-ka and present badminton Varsity student-athlete, she illustrated herself both in regional tournaments and in Pan-Am championships. Serious but dynamic, she is more than ready to help people push beyond their limits.",

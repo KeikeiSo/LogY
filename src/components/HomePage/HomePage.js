@@ -21,7 +21,7 @@ import { NavLink } from 'react-router-dom';
 
 const HomePage = () => {
   // reserve url for the reserve button
-  const reserveUrl = "#"
+  const reserveUrl = "https://forms.gle/AT8h5w7q477KVPTR7"
 
   const { translations } = useContext(TranslationsContext);
   const sliderRef = useRef(null);

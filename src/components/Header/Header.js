@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 
 const Header = ({ toggleLanguage }) => {
   // reserve button url
-  const reserveUrl = "https://meet.google.com/landing"
+  const reserveUrl = "https://forms.gle/AT8h5w7q477KVPTR7"
 
   const { translations, language } = useContext(TranslationsContext);
   const [scrolled, setScrolled] = useState(false);

@@ -1,7 +1,7 @@
 import React from 'react';
 import './SocialQRLineup.css';
-import facebookQR from '../../assets/socialMedia/qrcode/facebook_qrcode.svg';
-import instagramQR from '../../assets/socialMedia/qrcode/instagram_qrcode.svg';
+import facebookQR from '../../assets/socialMedia/qrcode/facebook_qrcode.png';
+import instagramQR from '../../assets/socialMedia/qrcode/instagram_qrcode.png';
 import rednoteQR from '../../assets/socialMedia/qrcode/rednote_qrcode.svg';
 import wechatQR from '../../assets/socialMedia/qrcode/wechat_qrcode.png';
 

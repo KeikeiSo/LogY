@@ -52,15 +52,15 @@
     }
   }
   .reserve-button-orange {
-    margin-left: 20px;
+    margin-right: 240px;
   }
 }
 
 .language-switcher {
   padding: 5px 10px;
   cursor: pointer;
-  position: static;
-  margin-left: calc(25%);
+  margin-left: auto;
+  margin-right: 16px;
   & button {
     background: none;
     border: none;
