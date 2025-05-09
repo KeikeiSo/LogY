@@ -5,9 +5,9 @@
   line-height: 1.6;
   color: var(--text-primary);
   padding: 20px;
-  max-width: 1000px;
-  margin: 20px auto;
-  margin-top: 0%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   background: var(--bg-light);
   
   & h1 {
@@ -343,32 +343,96 @@
   }
 }
 
-/* Fade in animation */
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-section {
-  opacity: 0;
-  animation: fadeIn 1s ease forwards;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .home-page {
     padding: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+    
+    & h1 {
+      padding: 0;
+      font-size: 28px;
+    }
+
+    & h2 {
+      font-size: 24px;
+    }
   }
 
-  .home-page h1 {
-    font-size: 2rem;
+  .home-page--general {
+    flex-direction: column;
+    background-size: cover;
+    padding-bottom: 40px;
+
+    & .home-page--general-left {
+      width: 100%;
+      margin-top: 100px;
+      
+      & p {
+        width: 100%;
+      }
+    }
+
+    & .home-page--general-right {
+      width: 100%;
+      margin-top: 30px;
+    }
   }
 
-  .home-page h2 {
-    font-size: 1.5rem;
+  .home-page--service {
+    margin-top: 80px;
+
+    & .home-page--problems {
+      flex-direction: column;
+      gap: 20px;
+
+      & .home-page--problem {
+        width: 100%;
+      }
+    }
+
+    & .home-page--service-photos {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
-  
-  .mission-statement {
-    padding: 15px;
+
+  .home-page--professional {
+    margin-top: 80px;
+
+    & .home-page--logos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .home-page--reviews {
+    margin-top: 80px;
+
+    & .home-page--comments-container {
+      margin-left: 0;
+
+      & .home-page--comments-slider {
+        & .home-page--comment {
+          min-width: calc(100% - 40px);
+        }
+      }
+    }
+  }
+
+  .home-page--find-us {
+    margin-top: 80px;
+
+    & .home-page-find-us-container {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    & .home-page--map {
+      width: 100%;
+    }
+
+    & .home-page--address {
+      width: 100%;
+    }
   }
 }

@@ -119,7 +119,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className='home-page--service-checkall'>
-          <button onClick={() => window.location.href += 'services'}>{"Check All"}</button>
+          <button onClick={() => window.location.href = 'https://logykinesiologie.ca/services'}>{"Check All"}</button>
         </div>
       </section>
       <section className='home-page--professional'>

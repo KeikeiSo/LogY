@@ -49,4 +49,29 @@
         background-color: var(--accent);
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    .reserve-button {
+      display: inline-flex;
+      height: 24px;
+      padding: 4px 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      border-radius: 6px;
+      font-size: 12px;
+    }
+    .reserve-button-orange {
+      display: inline-flex;
+      height: 24px;
+      padding: 4px 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      border-radius: 6px;
+      font-size: 12px;
+    }
+  }
   

@@ -78,30 +78,105 @@
   size: 40px;
 }
 
-@media only screen and (max-width: 600px) {
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
   .site-header {
-    padding: 0 10px; /* Reduced padding */
+    padding: 0 10px;
+    height: 40px;
+    &.scrolled {
+      & .hamburger-menu {
+        filter: brightness(0) invert(1);
+      }
+
+      & nav ul li a {
+        color: #000;
+      }
+    }
+
+    & .hamburger-menu,
+    .close-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 1001;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    & .logo {
+      padding-top: 3px;
+      width: 24px;
+      height: 24px;
+    }
+
+    & .language-switcher {
+      margin-right: 0px;
+      & button {
+        color: #000;
+        font-family: Avenir;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.165px;
+        text-decoration: none;
+        padding: 0;
+  
+        & .language-icon {
+          display: none;
+        }
+      }
+    }
+
+    .reserve-button-orange {
+      margin-right: 20px;
+    }
+    .mobile-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: var(--bg-light);
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      padding-top: 75px;
+      z-index: 1000;
+    }
+  
+    .mobile-nav.open {
+      transform: translateX(0);
+    }
+  
+    .mobile-nav ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      gap: 20px;
+    }
+  
+    .mobile-nav ul li {
+      margin: 10px 0;
+    }
+  
+    .mobile-nav ul li a {
+      color: #000;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.165px;
+      
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
   }
 
-  .logo {
-    height: 40px; /* Reduced logo size */
-    margin-right: 10px; /* Reduced margin */
-  }
-
-  .site-header nav ul li {
-    margin: 0 5px; /* Reduced margin between nav items */
-  }
-
-  .site-header nav ul li a {
-    font-size: 16px; /* Slightly smaller font size */
-  }
-
-  .language-switcher {
-    margin-right: 10px; /* Reduced margin for language switcher */
-  }
-
-  .language-switcher button {
-    padding: 3px 6px; /* Smaller padding for the button */
-    font-size: 0.8rem; /* Smaller font size */
+  /* Hide desktop nav on mobile */
+  .site-header > nav:not(.mobile-nav) {
+    display: none;
   }
 }

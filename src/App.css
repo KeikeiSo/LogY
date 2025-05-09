@@ -1,5 +1,8 @@
+/* Reset default styles */
 .App {
-  text-align: center;
+  text-align: left;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .App-logo {

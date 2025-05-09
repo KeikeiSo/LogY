@@ -10,7 +10,9 @@ const TeamMemberTeaser = ({ member}) => {
   const teamPagePath = `/team/${member.name.toLowerCase().replace(/\s+/g, '-')}`
   return (
     <div className="team-member-teaser">
-      <img src={member.imagePath} alt={member.name} className="teaser-image" />
+      <Link to={teamPagePath}>
+        <img src={member.imagePath} alt={member.name} className="teaser-image" />
+      </Link>
       <Link to={teamPagePath} className="teaser-name">
         {member.name}
         <img src={arrow} alt='link arrow'></img>
