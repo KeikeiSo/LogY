@@ -250,7 +250,7 @@
   @media only screen and (max-width: 480px) {
     .footer-container {
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       gap: 30px;
       padding: 20px;
       
@@ -258,26 +258,28 @@
       .footer-career,
       .footer-connect {
         width: 100%;
-        max-width: 300px;
-        text-align: center;
+        max-width: 325px;
+        align-items: flex-start;
+        gap: 5px;
         
-        h3, p {
-          text-align: center;
+        & h3, p {
+          font-size: 14px;
+          text-align: left;
         }
         
-        > div {
+        & > div {
+          justify-content: center;
+        }
+
+        & .footer-subscribe {
+          width: 100%;
+          max-width: 272px;
+          margin: 0;
+        }
+    
+        & .footer-social-media {
           justify-content: center;
         }
       }
-    }
-
-    .footer-subscribe {
-      width: 100%;
-      max-width: 272px;
-      margin: 20px auto;
-    }
-
-    .footer-social-media {
-      justify-content: center;
     }
   }
