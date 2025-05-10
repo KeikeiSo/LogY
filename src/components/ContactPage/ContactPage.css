@@ -248,8 +248,28 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .contact-page h1 {
-    font-size: 2rem;
+  .contact-page {
+    margin: 0 10px;
+    flex-direction: column;
+
+    & h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    & .contact-page-container-left {
+      width: 100%;
+      margin-top: 0;
+      & .find-us-here {
+        margin-bottom: 0;
+      }
+    }
+
+    & .contact-page-container-right {
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 80px;
+    }
   }
 
   .qr-code-container img {

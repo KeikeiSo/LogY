@@ -100,13 +100,48 @@
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .team-member-page {
-    flex-direction: column;
-  }
-  
-  .member-image {
-    max-width: 300px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+
+    & .team-member-page-title .member-name {
+      font-size: 24px;
+    }
+
+    & .team-member-page-content {
+      flex-direction: column;
+      margin: 0;
+      gap: 40px;
+
+      & .member-left-column {
+        align-items: center;
+        gap: 20px;
+        & .member-image {
+          max-width: 300px;
+          margin: 0 auto;
+        }
+        & .certification-logo {
+          height: 50px !important;
+        }
+      }
+
+      & .member-right-column {
+        margin: 0 10px;
+        & .reserve-button-container {
+          align-self: center;
+          width: 100%;
+          margin-bottom: 80px;
+          & .reserve-button-orange {
+            font-size: 16px;
+            height: 30px;
+            padding: 10px 16px;
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }

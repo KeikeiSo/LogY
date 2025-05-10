@@ -57,13 +57,31 @@
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
+    .services-page {
+      padding: 10px;
+  
+      & > h2 {
+        font-size: 20px;
+      }
+
+      & > p {
+        font-size: 14px;
+      }
+
+      & .filter-buttons {
+        gap: 4px;
+        margin-bottom: 0;
+        padding: 10px 0;
+        width: 100%;
+
+        & .filter-button {
+          font-size: 14px;
+        }
+      }
+    }  
   .services-grid {
     grid-template-columns: 1fr;
-  }
-
-  .filter-buttons {
-    gap: 8px;
   }
 
   .filter-button {

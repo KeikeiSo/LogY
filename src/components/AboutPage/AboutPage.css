@@ -61,19 +61,33 @@
 }
 
 
-  
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
+@media only screen and (max-width: 480px) {
+  .about-page {
+    width: 100%;
+    & h2 {
+      font-size: 18px;
+    }
+    & p {
+      font-size: 14px;
+    }
 
-@media (max-width: 600px) {
-  .join-page h1 {
-    font-size: 2rem; /* Smaller font size for h1 on smaller screens */
-  }
-  
-  .join-page p {
-    font-size: 1rem; /* Smaller font size for paragraphs on smaller screens */
+    & .about-page-mission {
+      width: 90%;
+      display: block;
+      margin-top: 60px;
+    }
+
+    & .about-page-our-team {
+      width: 90%;
+      display: block;
+      margin-top: 40px;
+    }
+    
+    & .about-page-follow-us {
+      width: 90%;
+      display: block;
+      margin-top: 40px;
+    }
   }
 }
   
