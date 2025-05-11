@@ -171,7 +171,7 @@ const Services = [
         name: "Acupuncture",
         image: acupuncture,
         description: "A traditional Chinese medicine practice that uses fine needles to stimulate specific points on the body, restoring energy flow and balance. It promotes natural healing, alleviates pain, reduces inflammation, and improves overall health.",
-        prices: ["60 min 95$", "90 min 142.5$"],
+        prices: ["60 min 95$"],
         benefits: ["restore energy", "stress", "chronic pain", "anxiety", "insomnia"],
         reserveUrl: "https://forms.gle/AT8h5w7q477KVPTR7",
         nameFr: "Acupuncture",

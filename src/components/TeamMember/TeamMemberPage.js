@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext} from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { TranslationsContext } from '../../App';
 import teamMembers from './TeamMemberData';
@@ -49,16 +49,25 @@ const TeamMemberPage = () => {
 
         <div className="member-right-column">
           <div className="member-education">
-            <p>{language === 'fr' ? member.educationDescriptionFr : member.educationDescription}</p>
+            <p dangerouslySetInnerHTML={{
+              __html: (language === 'fr' ? member.educationDescriptionFr : member.educationDescription)
+                .replace(/\n/g, '<br />')
+            }} />
           </div>
 
           <div className="member-experience">
-            <p>{language === 'fr' ? member.experienceDescriptionFr : member.experienceDescription}</p>
+            <p dangerouslySetInnerHTML={{
+              __html: (language === 'fr' ? member.experienceDescriptionFr : member.experienceDescription)
+                .replace(/\n/g, '<br />')
+            }} />
           </div>
 
           {member.specialties && (
             <div className="member-specialties">
-              <p>{language === 'fr' ? member.specialtiesFr : member.specialties}</p>
+              <p dangerouslySetInnerHTML={{
+                __html: (language === 'fr' ? member.specialtiesFr : member.specialties)
+                  .replace(/\n/g, '<br />')
+              }} />
             </div>
           )}
 

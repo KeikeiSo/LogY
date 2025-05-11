@@ -1,7 +1,8 @@
 import ruoyanL from '../../assets/teamMember/ruoyan_liu.png';
 import alianaL from '../../assets/teamMember/aliana_liang.png';
 import caline from '../../assets/teamMember/caline.png';
-import choleN from '../../assets/teamMember/chole_nassar.png'
+import choleN from '../../assets/teamMember/chole_nassar.png';
+import weitingL from '../../assets/teamMember/weiting_liu.png';
 import csep from '../../assets/logos/csep.png';
 import amq from '../../assets/logos/amq.png';
 import nsca from '../../assets/logos/nsca.png';
@@ -67,6 +68,31 @@ const teamMembers = [
 + '2 fois médaillée d’argent aux Championnats RSEQ collégiaux de badminton (2023 et 2024)\n'
 + 'Médaillée d’argent aux Championnats ABC de badminton (2024)',
       specialtiesFr: "",
+    },
+    {
+      name: "Weiting Liu",
+      imagePath: weitingL,
+      reserveUrl: "https://forms.gle/AT8h5w7q477KVPTR7",
+      education: "DEC en Acupuncture",
+      certifications: [],
+      educationDescription: "Weiting Liu is a member of the Ordre des acupuncteurs du Québec (OAQ) and Association des Acupuncteurs du Québec (AAQ). She is highly qualified and has mastered four stages of Traditional Chinese Medicine examinations. She gives a fair health assessment to each patient according to the individual case and provides combinations of acupuncture point prescriptions for the patient's personal needs.",
+      experienceDescription: 'She is more experienced in the following fields:\n'
++ '• depression, stress, anxiety, fatigue, insomnia\n'
++ '• digestive problems\n'
++ '• seasonal allergies\n'
++ '• respiratory problems\n'
++ '• chronic muscle pain/menstruation/headache\n'
++ '• general well-being',
+      specialties: "She has learned from many well-known Chinese medicine practitioners and has completed acupuncture courses and graduated from Collège de Rosemont in Montreal.",
+      educationDescriptionFr: "Weiting Liu est membre d’Ordre des acupuncteurs du Québec (OAQ) et Association des Acupuncteurs du Québec (AAQ). Elle est hautement qualifiée et maîtrise de quatre temps d’examens de Médecine Chinoise Traditionnelle. Elle donne un bilan santé à chaque patient selon le cas individuel et fournit des combinaisons de prescription de points de l’acupuncture pour le besoin personnel du patient.",
+      experienceDescriptionFr: 'Elle a plus d’expérience en :\n'
++ '• dépression, stress, anxiété, fatigue, insomnie\n'
++ '• problème digestif\n'
++ '• allergies saisonnières\n'
++ '•problème respiratoire\n'
++ '• douleur chronique musculaire/ menstruation/ mal de tête\n'
++ '• Bien-être en général',
+      specialtiesFr: "Elle a appris de nombreux praticiens de médecine chinoise bien connus et elle a suivi les formations de l’acupuncture et est diplômée au Collège de Rosemont à Montréal.",
     },
   ];
   
