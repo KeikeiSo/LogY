@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import './ServicesPage.css';
 import Services, {ServiceGroups} from '../ServiceComponent/ServicesData';
 import ServiceTeaser from '../ServiceComponent/ServiceTeaser';
@@ -26,8 +27,21 @@ const ServicesPage = () => {
     ? Services 
     : Services.filter(service => service.group === activeFilter);
 
+  // Generate meta description from services
+  const metaDescription = language === 'fr' 
+    ? `Services de ${translations.ourservice} incluant ${ServiceGroups.get('Massage Therapy')}, ${ServiceGroups.get('Physical Rehabilitation')}, et plus.`
+    : `${translations.ourservice} services including ${[...ServiceGroups.keys()].join(', ')}.`;
+
   return (
     <div className="services-page">
+      <Helmet>
+        <title>{translations.ourservice} | Logy Kinesiologie</title>
+        <meta name="description" content={metaDescription} />
+        <meta property="og:title" content={`${translations.ourservice} | Logy Kinesiologie`} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://logykinesiologie.ca/services" />
+      </Helmet>
       <h2>{translations.ourservice}</h2>
       <div className="filter-buttons">
         {serviceGroups.map(group => (
@@ -44,12 +58,13 @@ const ServicesPage = () => {
         ))}
       </div>
       <p>{translations.allPricesTaxExcluded}</p>
-      <div className="services-grid">
-        {filteredServices.map(service => (
-          <ServiceTeaser 
-            key={service.name} 
-            service={service} 
-          />
+      <div className="services-grid" itemScope itemType="https://schema.org/ItemList">
+        {filteredServices.map((service, index) => (
+          <div itemScope itemType="https://schema.org/Service" itemProp="itemListElement" key={service.name}>
+            <ServiceTeaser 
+              service={service} 
+            />
+          </div>
         ))}
       </div>
     </div>

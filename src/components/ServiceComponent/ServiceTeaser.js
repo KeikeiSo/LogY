@@ -7,10 +7,10 @@ const ServiceTeaser = ({ service }) => {
   const { translations, language} = useContext(TranslationsContext);
 
   return (
-    <div className="service-teaser">
-      <h3 className="service-name">{language === 'fr' ? service.nameFr : service.name}</h3>
-      <img src={service.image} alt={service.name} className="service-image" />
-      <p className="service-description">{language === 'fr' ? service.descriptionFr : service.description}</p>
+    <div className="service-teaser" itemProp="item">
+      <h3 className="service-name" itemProp="name">{language === 'fr' ? service.nameFr : service.name}</h3>
+      <img src={service.image} alt={service.name} className="service-image" itemProp="image" />
+      <p className="service-description" itemProp="description">{language === 'fr' ? service.descriptionFr : service.description}</p>
       
       <div className="service-prices">
         <ul>

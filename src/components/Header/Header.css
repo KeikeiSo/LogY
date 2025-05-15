@@ -37,6 +37,8 @@
       & li {
         margin: 0px 16px;
         width: 70px;
+        display: flex;
+        justify-content: center;
         & a {
           color: var(--text-primary);
           text-decoration: none;
