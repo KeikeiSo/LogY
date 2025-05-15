@@ -60,7 +60,7 @@ const Header = ({ toggleLanguage }) => {
             <nav className={`mobile-nav ${isMobileMenuOpen ? 'open' : ''}`}>
               <ul>
                 <li><NavLink to="" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>{translations.home}</NavLink></li>
-                <li><NavLink to="/about" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>{translations.about}</NavLink></li>
+                <li><NavLink to="/our-team" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>{translations.about}</NavLink></li>
                 <li><NavLink to="/services" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>{translations.services}</NavLink></li>
                 <li><NavLink to="/contact" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>{translations.contact}</NavLink></li>
               </ul>
@@ -77,7 +77,7 @@ const Header = ({ toggleLanguage }) => {
             <nav>
               <ul>
                 <li><NavLink to="">{translations.home}</NavLink></li>
-                <li><NavLink to="/about">{translations.about}</NavLink></li>
+                <li><NavLink to="/our-team">{translations.about}</NavLink></li>
                 <li><NavLink to="/services">{translations.services}</NavLink></li>
                 <li><NavLink to="/contact">{translations.contact}</NavLink></li>
               </ul>

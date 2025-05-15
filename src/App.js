@@ -42,7 +42,7 @@ function App() {
             <FooterComponent/>
             </>
           } />
-          <Route path="/about" element={<> <AboutPage/> <FooterComponent /></>} />
+          <Route path="/our-team" element={<> <AboutPage/> <FooterComponent /></>} />
           <Route path="/services" element={<> <ServicesPage/> <FooterComponent /></>} />
           <Route path="/contact" element={<> <ContactPage/> <FooterComponent/></>} />
           <Route path="/team/:name" element={<> <TeamMemberPage/> <FooterComponent/></>} />

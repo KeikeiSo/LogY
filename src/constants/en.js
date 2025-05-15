@@ -1,7 +1,7 @@
  const enTranslations = {
   // header
   home: "Home",
-  about: "About",
+  about: "Our Team",
   services: "Services",
   contact: "Contact",
 

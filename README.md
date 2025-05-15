@@ -5,5 +5,5 @@ Welcome to the GitHub repository of KinesioLog[Y], a React-based website develop
 
 ## Deployment
 
-The website is live and can be accessed at [KinesioLog-Y.ca](https://www.kinesiolog-y.ca/).
+The website is live and can be accessed at [LogYkinesioligie.ca](https://logykinesiologie.ca/).
 
