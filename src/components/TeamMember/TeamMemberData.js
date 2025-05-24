@@ -49,7 +49,7 @@ const teamMembers = [
       specialtiesFr: "Spécialités : Cours de fitness en groupe, entraînement adapté, Pilates au sol.",
     },
     {
-      name: "Caline",
+      name: "Caline Huang",
       imagePath: caline,
       reserveUrl: "https://forms.gle/AT8h5w7q477KVPTR7",
       education: "Kinesiology Student",

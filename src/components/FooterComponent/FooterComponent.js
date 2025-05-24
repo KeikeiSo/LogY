@@ -12,7 +12,6 @@ import instagramIcon from '../../assets/socialMedia/instagram.svg';
 import wechatIcon from '../../assets/socialMedia/wechat.svg';
 import facebookIcon from '../../assets/socialMedia/facebook.svg';
 import rednoteIcon from '../../assets/socialMedia/rednote.png';
-import emailjs from 'emailjs-com';
 
 const FooterComponent = () => {
   const instagramUrl = "https://www.instagram.com/kinesio.log.y/";
@@ -42,16 +41,25 @@ const FooterComponent = () => {
   };
 
   const sendEmail = async (email) => {
-    emailjs.send(
-      "service_rg5dmdk","template_wf9ym5q", {"email":email}, "7m1pKgjwOPTpOCozk"
-    ).then(
-      (result) => {
+    try {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbyY5I4FbdsMFuxD0PI6m57GBHeP8061zGd7ssCyRu7BcaTIfYrKqCyT01QEX7qUKLrW/exec", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }), // Send the input value
+      });
+
+      const result = await response.json();
+
+      if (result.status === "success") {
         console.info('Email sent!', result.text);
-      },
-      (error) => {
-        console.error('Error:', error.text);
+      } else {
+        console.info('Failed to send email.', result.text);
       }
-    )
+    } catch (err) {
+      console.error('Error:', error.text);
+    }
   }
   return (
     <div className="footer-container">
