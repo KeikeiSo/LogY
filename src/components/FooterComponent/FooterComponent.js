@@ -41,15 +41,10 @@ const FooterComponent = () => {
   };
 
   const sendEmail = async (email) => {
+    const encodedMessage = encodeURIComponent(email);
+    const scriptURL = `https://script.google.com/macros/s/AKfycbxJ2ZV5Bk7wLFPbhjujKnVlpr4FBdBEauQGpWE_nswllNRnit5LG6t37F7ba2-rPn-e/exec?message=${encodedMessage}`;
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbyY5I4FbdsMFuxD0PI6m57GBHeP8061zGd7ssCyRu7BcaTIfYrKqCyT01QEX7qUKLrW/exec", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }), // Send the input value
-      });
-
+      const response = await fetch(scriptURL);
       const result = await response.json();
 
       if (result.status === "success") {
