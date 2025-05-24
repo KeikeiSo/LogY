@@ -57,7 +57,7 @@ const FooterComponent = () => {
       } else {
         console.info('Failed to send email.', result.text);
       }
-    } catch (err) {
+    } catch (error) {
       console.error('Error:', error.text);
     }
   }
