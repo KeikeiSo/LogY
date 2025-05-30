@@ -12,7 +12,7 @@ import rednoteIcon from '../../assets/icons/rednote.svg';
 import messageIcon from '../../assets/message_sended.svg';
 import checkIcon from '../../assets/icons/check.svg';
 import closeIcon from '../../assets/icons/close.svg';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 
 const ContactPage = () => {
