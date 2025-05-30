@@ -19,7 +19,7 @@ const TeamMemberPage = () => {
   return (
     <div className="team-member-page">
       <div className='team-member-page-title'>
-        <Link to="/about" className="back-button">
+        <Link to="/our-team" className="back-button">
           <img src={backwardArrow} alt="Back to about page" />
         </Link>
         <h2 className="member-name">{member.name}</h2>

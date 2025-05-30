@@ -61,20 +61,20 @@ const ContactPage = () => {
 
   const sendEmail = async (subject, body) => {
     const content = {
-      "subject": subject,
-      "body": body,
+      subject: subject,
+      body: body,
     }
-    emailjs.send(
-      "service_rg5dmdk","template_wf9ym5q", content, "7m1pKgjwOPTpOCozk"
-    ).then(
-      (result) => {
-        console.info('Email sent!', result.text);
-      },
-      (error) => {
-        console.error('Error:', error.text);
-      }
-    )
+    emailjs.send('service_2gxcaoj', 'template_beitq8s', content, 'An7PyGMVvY90pd9o8')
+      .then(
+        () => {
+          console.info('Email sent!');
+        },
+        (error) => {
+          console.error('Error sending email:', error.text);
+        },
+      );
   }
+
   return (
     <div className="contact-page">
       <div className='contact-page-container-left'>
@@ -108,8 +108,8 @@ const ContactPage = () => {
         <div className='message-form'>
           <form onSubmit={(e) => {
             e.preventDefault();
-            const subject = `Message from ${formData.firstName} ${formData.lastName}`;
-            const body = `Name: ${formData.firstName} ${formData.lastName} Email: ${formData.email} Phone: ${formData.phone} Message: ${formData.message}`;
+            const subject = `Message from Customer ${formData.firstName} ${formData.lastName}`;
+            const body = `Name: ${formData.firstName} ${formData.lastName} \nEmail: ${formData.email} \nPhone: ${formData.phone} \n\nMessage: \n${formData.message}`;
             sendEmail(subject, body);
             setShowPopup(true);
           }}>

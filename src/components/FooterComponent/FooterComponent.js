@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import './FooterComponent.css';
 import { TranslationsContext } from '../../App';
 import addressIcon from '../../assets/icons/address_light.svg';
@@ -41,20 +42,17 @@ const FooterComponent = () => {
   };
 
   const sendEmail = async (email) => {
-    const encodedMessage = encodeURIComponent(email);
-    const scriptURL = `https://script.google.com/macros/s/AKfycbxJ2ZV5Bk7wLFPbhjujKnVlpr4FBdBEauQGpWE_nswllNRnit5LG6t37F7ba2-rPn-e/exec?message=${encodedMessage}`;
-    try {
-      const response = await fetch(scriptURL);
-      const result = await response.json();
-
-      if (result.status === "success") {
-        console.info('Email sent!', result.text);
-      } else {
-        console.info('Failed to send email.', result.text);
-      }
-    } catch (error) {
-      console.error('Error:', error.text);
-    }
+    emailjs.send('service_2gxcaoj', 'template_o8cvl0k', {
+        email: email
+      }, 'An7PyGMVvY90pd9o8')
+      .then(
+        () => {
+          console.info('Email sent!');
+        },
+        (error) => {
+          console.error('Error sending email:', error.text);
+        },
+      );
   }
   return (
     <div className="footer-container">
