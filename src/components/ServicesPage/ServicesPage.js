@@ -41,6 +41,27 @@ const ServicesPage = () => {
         <meta property="og:description" content={metaDescription} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://logykinesiologie.ca/services" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "itemListElement": Services.map((service, index) => ({
+              "@type": "ListItem",
+              "position": index + 1,
+              "item": {
+                "@type": "Service",
+                "name": service.name,
+                "description": service.description,
+                "image": `https://logykinesiologie.ca${service.image}`,
+                "offers": {
+                  "@type": "Offer",
+                  "price": service.prices[0].replace(/[^0-9.]/g, ''),
+                  "priceCurrency": "CAD"
+                }
+              }
+            }))
+          })}
+        </script>
       </Helmet>
       <h2>{translations.ourservice}</h2>
       <div className="filter-buttons">

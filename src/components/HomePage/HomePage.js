@@ -1,4 +1,5 @@
 import React, { useContext, useRef, useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import './HomePage.css';
 import ReserveButton from '../ReserveButton/ReserveButton';
 import { TranslationsContext } from '../../App';
@@ -64,7 +65,30 @@ const HomePage = () => {
   };
   
   return (
-    <div className="home-page">
+      <div className="home-page">
+      <Helmet>
+        <title>LogY Kinesiologie - Professional Kinesiology Services</title>
+        <meta 
+          name="description" 
+          content="LogY Kinesiologie - Professional kinesiology services including sports therapy, rehabilitation, and personalized training programs in Montreal." 
+        />
+        <meta name="keywords" content="kinesiology, sports therapy, rehabilitation, personal training, physiotherapy, Montreal" />
+        <meta name="author" content="LogY Kinesiologie" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://logykinesiologie.com/" />
+        <meta property="og:title" content="LogY Kinesiologie - Professional Kinesiology Services" />
+        <meta property="og:description" content="Professional kinesiology services including sports therapy, rehabilitation, and personalized training programs in Montreal." />
+        <meta property="og:image" content="%PUBLIC_URL%/assets/kinesiotherapy.jpg" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://logykinesiologie.com/" />
+        <meta property="twitter:title" content="LogY Kinesiologie - Professional Kinesiology Services" />
+        <meta property="twitter:description" content="Professional kinesiology services including sports therapy, rehabilitation, and personalized training programs in Montreal." />
+        <meta property="twitter:image" content="%PUBLIC_URL%/assets/kinesiotherapy.jpg" />
+      </Helmet>
       <section className='home-page--general'>
         <div className='home-page--general-left'>
           <h1>{translations.welcome}</h1>
