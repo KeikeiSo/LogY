@@ -7,3 +7,4 @@ Welcome to the GitHub repository of KinesioLog[Y], a React-based website develop
 
 The website is live and can be accessed at [LogYkinesioligie.ca](https://logykinesiologie.ca/).
 
+Hello world
