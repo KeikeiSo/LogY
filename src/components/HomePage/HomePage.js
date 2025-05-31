@@ -67,11 +67,6 @@ const HomePage = () => {
   return (
       <div className="home-page">
       <Helmet>
-        <title>LogY Kinesiologie - Professional Kinesiology Services</title>
-        <meta 
-          name="description" 
-          content="LogY Kinesiologie - Professional kinesiology services including sports therapy, rehabilitation, and personalized training programs in Montreal." 
-        />
         <meta name="keywords" content="kinesiology, sports therapy, rehabilitation, personal training, physiotherapy, Montreal" />
         <meta name="author" content="LogY Kinesiologie" />
         
