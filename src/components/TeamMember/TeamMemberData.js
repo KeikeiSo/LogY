@@ -78,10 +78,10 @@ const teamMembers = [
       certifications: [fkq],
       educationDescription: "With a Master’s in Kinesiology and a minor in Psychology, Milly brings a deep understanding of the human body and mind to every session. She combines her academic background with a passion for exercise to deliver personalized, motivational fitness sessions tailored to your goals and needs.",
       experienceDescription: "Excited to join LogY Kinésiologie, Milly looks forward to gaining hands-on experience with one-on-one coaching. During her time as a fitness instructor at the McGill Kinesiology Clinic, where she led group fitness classes, she discovered a strong desire to connect with clients more deeply to provide truly individualized support. She has also volunteered with the Stroke Recovery Association of BC and Special Olympics, assisting athletes and encouraging their continued participation in sport. Outside of work, Milly stays active and inspired by playing Ultimate Frisbee.",
-      specialties: "Kinesiology, Strength and Conditioning, Functional Training",
+      specialties: "Speciality: Kinesiology, Strength and Conditioning, Functional Training",
       educationDescriptionFr: "Titulaire d’une maîtrise en kinésiologie et d’une mineure en psychologie, Milly apporte une compréhension approfondie du corps et de l’esprit humains à chacune de ses séances. Elle combine ses connaissances académiques avec sa passion pour l’exercice afin d’offrir des séances personnalisées et motivantes adaptées à vos objectifs et besoins.",
       experienceDescriptionFr: "Ravie de rejoindre LogY Kinésiologie, Milly souhaite développer son expérience pratique en coaching individuel. Comme instructrice au McGill Kinesiology Clinic, où elle animait des cours de mise en forme en groupe, elle a ressenti le besoin de mieux connaître ses clients afin d’offrir un soutien réellement personnalisé. Elle a également fait du bénévolat au Stroke Recovery Association of BC et aux Olympiques spéciaux, où elle soutenait les athlètes et encourageait leur participation sportive. En dehors du travail, Milly reste active et motivée en jouant à l’Ultimate Frisbee.",
-      specialtiesFr: "Kinésiologie, Entraînement en force et conditionnement, Entraînement fonctionnel",
+      specialtiesFr: "Spécialités : Kinésiologie, Entraînement en force et conditionnement, Entraînement fonctionnel",
     },
   ];
   
