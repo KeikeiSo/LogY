@@ -2,12 +2,12 @@ import ruoyanL from '../../assets/teamMember/ruoyan_liu.png';
 import alianaL from '../../assets/teamMember/aliana_liang.png';
 import caline from '../../assets/teamMember/caline.png';
 import choleN from '../../assets/teamMember/chole_nassar.png';
-import millyH from '../../../assets/teamMember/milly_huang.png';
+import millyH from '../../assets/teamMember/milly_huang.png';
 import csep from '../../assets/logos/csep.png';
 import amq from '../../assets/logos/amq.png';
 import nsca from '../../assets/logos/nsca.png';
 import pn from '../../assets/logos/pn.png';
-import fkq from '../../../assets/logos/FKQ_Logo.png';
+import fkq from '../../assets/logos/FKQ_Logo.png';
 
 const teamMembers = [
     {
