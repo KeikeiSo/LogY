@@ -2,11 +2,12 @@ import ruoyanL from '../../assets/teamMember/ruoyan_liu.png';
 import alianaL from '../../assets/teamMember/aliana_liang.png';
 import caline from '../../assets/teamMember/caline.png';
 import choleN from '../../assets/teamMember/chole_nassar.png';
-import weitingL from '../../assets/teamMember/weiting_liu.png';
+import millyH from '../../../assets/teamMember/milly_huang.png';
 import csep from '../../assets/logos/csep.png';
 import amq from '../../assets/logos/amq.png';
 import nsca from '../../assets/logos/nsca.png';
 import pn from '../../assets/logos/pn.png';
+import fkq from '../../../assets/logos/FKQ_Logo.png';
 
 const teamMembers = [
     {
@@ -70,29 +71,17 @@ const teamMembers = [
       specialtiesFr: "",
     },
     {
-      name: "Weiting Liu",
-      imagePath: weitingL,
+      name: "Milly Huang",
+      imagePath: millyH,
       reserveUrl: "https://forms.gle/AT8h5w7q477KVPTR7",
-      education: "DEC en Acupuncture",
-      certifications: [],
-      educationDescription: "Weiting Liu is a member of the Ordre des acupuncteurs du Québec (OAQ) and Association des Acupuncteurs du Québec (AAQ). She is highly qualified and has mastered four stages of Traditional Chinese Medicine examinations. She gives a fair health assessment to each patient according to the individual case and provides combinations of acupuncture point prescriptions for the patient's personal needs.",
-      experienceDescription: 'She is more experienced in the following fields:\n'
-+ '• depression, stress, anxiety, fatigue, insomnia\n'
-+ '• digestive problems\n'
-+ '• seasonal allergies\n'
-+ '• respiratory problems\n'
-+ '• chronic muscle pain/menstruation/headache\n'
-+ '• general well-being',
-      specialties: "She has learned from many well-known Chinese medicine practitioners and has completed acupuncture courses and graduated from Collège de Rosemont in Montreal.",
-      educationDescriptionFr: "Weiting Liu est membre d’Ordre des acupuncteurs du Québec (OAQ) et Association des Acupuncteurs du Québec (AAQ). Elle est hautement qualifiée et maîtrise de quatre temps d’examens de Médecine Chinoise Traditionnelle. Elle donne un bilan santé à chaque patient selon le cas individuel et fournit des combinaisons de prescription de points de l’acupuncture pour le besoin personnel du patient.",
-      experienceDescriptionFr: 'Elle a plus d’expérience en :\n'
-+ '• dépression, stress, anxiété, fatigue, insomnie\n'
-+ '• problème digestif\n'
-+ '• allergies saisonnières\n'
-+ '•problème respiratoire\n'
-+ '• douleur chronique musculaire/ menstruation/ mal de tête\n'
-+ '• Bien-être en général',
-      specialtiesFr: "Elle a appris de nombreux praticiens de médecine chinoise bien connus et elle a suivi les formations de l’acupuncture et est diplômée au Collège de Rosemont à Montréal.",
+      education: "M.Sc. Kinesiology, Minor in Psychology",
+      certifications: [fkq],
+      educationDescription: "With a Master’s in Kinesiology and a minor in Psychology, Milly brings a deep understanding of the human body and mind to every session. She combines her academic background with a passion for exercise to deliver personalized, motivational fitness sessions tailored to your goals and needs.",
+      experienceDescription: "Excited to join LogY Kinésiologie, Milly looks forward to gaining hands-on experience with one-on-one coaching. During her time as a fitness instructor at the McGill Kinesiology Clinic, where she led group fitness classes, she discovered a strong desire to connect with clients more deeply to provide truly individualized support. She has also volunteered with the Stroke Recovery Association of BC and Special Olympics, assisting athletes and encouraging their continued participation in sport. Outside of work, Milly stays active and inspired by playing Ultimate Frisbee.",
+      specialties: "Kinesiology, Strength and Conditioning, Functional Training",
+      educationDescriptionFr: "Titulaire d’une maîtrise en kinésiologie et d’une mineure en psychologie, Milly apporte une compréhension approfondie du corps et de l’esprit humains à chacune de ses séances. Elle combine ses connaissances académiques avec sa passion pour l’exercice afin d’offrir des séances personnalisées et motivantes adaptées à vos objectifs et besoins.",
+      experienceDescriptionFr: "Ravie de rejoindre LogY Kinésiologie, Milly souhaite développer son expérience pratique en coaching individuel. Comme instructrice au McGill Kinesiology Clinic, où elle animait des cours de mise en forme en groupe, elle a ressenti le besoin de mieux connaître ses clients afin d’offrir un soutien réellement personnalisé. Elle a également fait du bénévolat au Stroke Recovery Association of BC et aux Olympiques spéciaux, où elle soutenait les athlètes et encourageait leur participation sportive. En dehors du travail, Milly reste active et motivée en jouant à l’Ultimate Frisbee.",
+      specialtiesFr: "Kinésiologie, Entraînement en force et conditionnement, Entraînement fonctionnel",
     },
   ];
   
