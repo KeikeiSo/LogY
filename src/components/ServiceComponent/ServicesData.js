@@ -26,7 +26,7 @@ const Services = [
         name: "Swedish Massage",
         image: swedishMassage,
         description: "Designed to promote relaxation, reduce stress, and improve circulation by using long, soothing strokes, kneading, and gentle stretches to ease muscle tension.",
-        prices: ["60 min 95$", "90 min 142.5$"],
+        prices: ["60 min 100$", "90 min 150$"],
         benefits: ["relaxation", "stress relief", "light pressure"],
         reserveUrl: "https://forms.gle/AT8h5w7q477KVPTR7",
         nameFr: "Massage Suédois",
