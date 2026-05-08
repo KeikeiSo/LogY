@@ -54,7 +54,7 @@ const frTranslations = {
   addressTitle: "LogY Kinésiologie",
   addressDetail: "1470 Rue Peel suite 820, Montréal, QC, H3A 1T1",
   metroStation: "À côté de la station de métro Peel",
-  openHour: "Du lundi au vendredi, de 8h à 20h",
+  openHour: "Du lundi au dimanche, de 10h à 20h",
   phoneNumber: "(514) 430-6518",
 
   // about page
