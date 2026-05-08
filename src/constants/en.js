@@ -54,7 +54,7 @@
   addressTitle: "LogY Kinésiologie",
   addressDetail: "1470 Rue Peel suite 820, Montréal, QC, H3A 1T1",
   metroStation: "Next to Peel Metro station",
-  openHour: "Monday to Friday 8am - 8pm",
+  openHour: "Monday to Sunday 9am - 8pm",
   phoneNumber: "(514) 430-6518",
 
   // about page 
