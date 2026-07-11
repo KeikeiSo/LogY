@@ -8,7 +8,6 @@ import osteopathy from "../../assets/services/osteopathy.png";
 import physiotherapy from "../../assets/services/physiotherapy.png";
 import kinesiology from "../../assets/services/kinesiology.png";
 import personalTraining from "../../assets/services/personal_training.png";
-import boxing from "../../assets/services/boxing.png";
 import cupping from "../../assets/services/cupping.png";
 import acupuncture from "../../assets/services/acupuncture.png";
 
